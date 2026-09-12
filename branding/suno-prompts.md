@@ -11,55 +11,72 @@ Traducción a música: **hard rock sureño / biker rock** con un guiño **cinem�
 
 ---
 
-## 1) CABECERA / INTRO DEL CANAL DE YOUTUBE
+## 1) CABECERA / INTRO DEL CANAL — 25 SEGUNDOS
 
-Objetivo: 20–45 s, que entre fuerte, que se reconozca a los 2 segundos y que cierre con un golpe seco
-para dar paso al vídeo. Es la "sintonía" de Top Gas.
+Objetivo: **25 s exactos**, explosivo desde el primer compás y con final seco. Nada de introducción
+ambiental ni de subidas lentas: el gancho tiene que aparecer antes del segundo 5.
 
-### Campo *Style of Music* (versión corta, segura)
+Referencia estética: *main title* de película de aviación de mediados de los 80 — guitarra solista
+con delay largo y trémolo, sintes de metal, caja con gated reverb, secuencia de bajo en semicorcheas.
 
-```
-Instrumental biker rock anthem, southern hard rock meets 80s cinematic action theme, roaring twin
-guitar harmony riff, slide guitar, Hammond organ, gated reverb snare, analog synth brass stabs,
-driving four-on-the-floor drums, E minor, 126 BPM, heroic rebellious chrome-and-asphalt energy,
-arena production, tape saturation, wide stereo, big final hit.
-```
+> **Importante:** no escribas en Suno el nombre de la película, del compositor ni del guitarrista.
+> Suno rechaza el prompt. Se consigue el mismo sonido **describiendo los elementos**, que es lo que
+> hacen los prompts de abajo.
 
-### Campo *Style of Music* (versión larga / v4.5+)
+### Campo *Style of Music*
 
 ```
-Epic instrumental main title theme for a custom motorcycle club channel. Genre: southern hard rock
-and biker rock fused with 80s cinematic action-movie score. Tempo 124-128 BPM, key E minor, 4/4,
-confident mid-tempo swagger, never rushed. Instrumentation: crunchy Les Paul rhythm guitars double
-tracked hard left and right, harmonized twin lead guitar hook, bluesy slide guitar answering the
-riff, Hammond B3 organ pad, fat P-bass, live rock drum kit with big toms and gated reverb snare,
-analog synth brass stabs and a rising synth swell on the intro, subtle orchestral timpani hits on
-the accents. Arrangement: short dramatic swell, riff enters with full band, melodic lead hook as
-the main memorable theme, two-bar drum breakdown, final restatement, single hard stop. Production:
-arena sized, tape saturation, punchy transients, wide stereo image, cinematic reverb tails, modern
-loudness but organic and human. Mood: heroic, rebellious, free, sunset highway, chrome and leather.
+Instrumental 80s cinematic rock anthem, aviation action-movie main title energy, 128 BPM, 4/4,
+E minor lifting into a triumphant major-key hook. Soaring lead electric guitar carrying the melody
+with long stereo delay, wide vibrato and whammy bar dives; palm-muted chugging power chords
+underneath; punchy analog synth brass stabs; driving sequenced 16th-note synth bass; gated reverb
+snare and electronic toms; shimmering FM bell pad on top. Arrangement is short and explosive:
+two bar swell, four bar riff, six bar lead guitar theme, one bar hard stop. Total length 25
+seconds. High energy from the very first beat, heroic, triumphant, chrome and jet fuel. Big loud
+bright 1986 arena production, tape saturation, wide stereo.
 ```
 
-### Campo de letra (estructura)
+### Campo *Style* (versión corta si tu Suno limita a ~200 caracteres)
 
 ```
-[Intro: rising synth swell + timpani hit]
-[Main Riff: harmonized twin guitars, full band enters]
-[Lead Theme: melodic slide guitar hook]
-[Breakdown: drums + organ only, 2 bars]
-[Final Restatement: full band, biggest dynamic]
-[Outro: single hard stop with cymbal swell]
+Instrumental 80s cinematic aviation rock anthem, soaring delayed lead guitar, synth brass stabs,
+sequenced synth bass, gated reverb snare, palm-muted power chords, 128 BPM, heroic and explosive,
+25 second main title, hard stop.
+```
+
+### Campo de letra (estructura con tiempos, 128 BPM → 1 compás = 1,9 s)
+
+```
+[0:00 Intro - 2 bars: synth brass swell + electronic tom fill, no fade in]
+[0:04 Main Riff - 4 bars: palm-muted power chords + sequenced synth bass, full drums]
+[0:11 Lead Theme - 6 bars: soaring lead guitar melody over the riff, highest energy]
+[0:22 Ending - 1 bar: final power chord, crash cymbal, hard stop]
+[End]
 ```
 
 ### Exclude Styles / negativos
 
 ```
-vocals, singing, choir, rap, trap hi-hats, EDM drop, dubstep, lo-fi, chiptune, muzak, elevator
-music, cheesy MIDI, orchestral only, ballad, fade out ending
+vocals, singing, rap, long intro, ambient intro, fade in, fade out, slow build, quiet opening,
+sparse verse, ballad, lo-fi, trap hi-hats, EDM drop, tempo change, orchestral only
 ```
 
+### Cómo conseguir que dure 25 s de verdad
+
+Suno **no garantiza la duración**: le pidas lo que le pidas, suele entregar entre 1 y 3 minutos.
+El prompt de arriba sube mucho las probabilidades de una pista corta, pero el método fiable es:
+
+1. Genera **6–8 versiones** con ese prompt.
+2. Descarta las que empiecen suave: te interesa la que entra a saco en el segundo 0.
+3. Recorta **0:00 → 0:25** (en Suno, *Edit → Crop/Trim* si tu plan lo tiene; si no, en Audacity,
+   CapCut o el propio editor de YouTube).
+4. El corte cae casi siempre a mitad de compás: alinéalo con el primer golpe de caja del compás 14
+   y pega encima un **crash con cola de reverb** para cerrar. Queda como final compuesto, no cortado.
+5. Alternativa limpia: genera la pista completa, localiza el punto de máxima energía (suele estar
+   sobre 0:45–1:10) y monta la cabecera con **4 s de swell + 20 s de ese tramo + crash final**.
+
 ### Títulos sugeridos
-`Top Gas Anthem` · `Chrome & Afterburner` · `Highway Squadron` · `Ignition Sequence`
+`Top Gas Anthem` · `Afterburner` · `Ignition` · `Full Throttle Theme`
 
 ---
 
