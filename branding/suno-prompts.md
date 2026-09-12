@@ -80,6 +80,59 @@ El prompt de arriba sube mucho las probabilidades de una pista corta, pero el m�
 
 ---
 
+## 1B) CABECERA — VARIANTE ROCKERA (25 s, guitarras al frente)
+
+Misma función y misma duración que la 1), pero la épica la llevan **las guitarras y no los sintes**.
+Sube el tempo, entra Hammond en lugar de teclado ochentero, batería acústica sin procesar y bajo
+tocado. Es la versión que mejor casa con el lado custom del logo: más garaje, más cuero, menos cabina.
+
+### Campo *Style of Music*
+
+```
+Instrumental hard rock main title, 136 BPM, 4/4, key E, guitar driven with no synthesizers.
+Two Marshall stacked electric guitars playing a harmonized twin lead melody in thirds as the main
+hook, thick distorted power chord riff underneath, bluesy slide guitar fills, dirty Hammond organ
+holding the chords, loud fingered electric bass, hard hitting acoustic drum kit with open hi-hat,
+cowbell on the accents and a tom fill intro, natural room reverb. Arrangement is short and
+explosive: two bar drum and guitar pickup, four bar riff, seven bar twin lead theme, one bar hard
+stop. Total length 25 seconds. Swaggering, heroic, triumphant, full throttle. Raw analog 70s and
+80s rock production, tape saturation, real amps, no click track feel, loud and live.
+```
+
+### Campo *Style* (versión corta)
+
+```
+Instrumental hard rock main title, harmonized twin lead guitars, thick power chord riff, slide
+guitar, dirty Hammond organ, acoustic drums with cowbell, 136 BPM, key E, no synths, explosive
+25 second intro, hard stop.
+```
+
+### Campo de letra (estructura con tiempos, 136 BPM → 1 compás = 1,76 s)
+
+```
+[0:00 Intro - 2 bars: tom fill into a screaming guitar pickup, no fade in]
+[0:03 Main Riff - 4 bars: thick power chord riff, bass and drums lock in, cowbell]
+[0:10 Twin Lead Theme - 7 bars: harmonized twin guitars play the main melody, highest energy]
+[0:22 Ending - 1 bar: final open chord, crash cymbal, hard stop]
+[End]
+```
+
+### Exclude Styles / negativos
+
+```
+vocals, singing, synthesizer, synth bass, synth brass, gated reverb snare, electronic drums, 80s
+pop, long intro, fade in, fade out, slow build, quiet opening, ballad, lo-fi, trap hi-hats, EDM
+```
+
+> Si aun así se te cuela algún teclado, añade también `keyboard, piano, strings` a los negativos.
+> Y si quieres un punto intermedio entre 1) y 1B), quita `synthesizer` del exclude y deja solo
+> `synth bass, gated reverb snare`: conservas un golpe de sinte en los acentos con la base rockera.
+
+### Títulos sugeridos
+`Top Gas Overdrive` · `Kickstart` · `Twin Lead` · `Redline Theme`
+
+---
+
 ## 2) FONDO INSTRUMENTAL PARA LOS VÍDEOS
 
 Objetivo: acompañar sin molestar. Se pone **debajo de la voz, de motores y de cámara onboard**.
