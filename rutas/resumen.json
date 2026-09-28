@@ -1,0 +1,132 @@
+[
+  {
+    "fecha": "2026-10-04",
+    "id": "01",
+    "nombre": "Costa de Poniente: Andratx y Sant Elm",
+    "dificultad": "Fácil",
+    "km": 85,
+    "horas_conduccion": 1.6,
+    "salida": "09:30",
+    "gpx": "01-facil-costa-de-poniente-andratx-y-sant-elm.gpx"
+  },
+  {
+    "fecha": "2026-10-11",
+    "id": "02",
+    "nombre": "Migjorn: Cap Blanc y Colònia de Sant Jordi",
+    "dificultad": "Fácil",
+    "km": 147,
+    "horas_conduccion": 2.4,
+    "salida": "09:30",
+    "gpx": "02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx"
+  },
+  {
+    "fecha": "2026-10-18",
+    "id": "05",
+    "nombre": "Valldemossa, Deià y Sóller",
+    "dificultad": "Media",
+    "km": 76,
+    "horas_conduccion": 1.7,
+    "salida": "09:00",
+    "gpx": "05-media-valldemossa-deia-y-soller.gpx"
+  },
+  {
+    "fecha": "2026-10-25",
+    "id": "03",
+    "nombre": "Pla de Mallorca: Sineu, Petra y Porreres",
+    "dificultad": "Fácil",
+    "km": 112,
+    "horas_conduccion": 1.8,
+    "salida": "09:30",
+    "gpx": "03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx"
+  },
+  {
+    "fecha": "2026-11-01",
+    "id": "06",
+    "nombre": "Galilea, Puigpunyent y Es Capdellà",
+    "dificultad": "Media",
+    "km": 57,
+    "horas_conduccion": 1.5,
+    "salida": "09:30",
+    "gpx": "06-media-galilea-puigpunyent-y-es-capdella.gpx"
+  },
+  {
+    "fecha": "2026-11-08",
+    "id": "04",
+    "nombre": "Levante: Porto Cristo, Portocolom y Santanyí",
+    "dificultad": "Fácil",
+    "km": 155,
+    "horas_conduccion": 2.6,
+    "salida": "09:00",
+    "gpx": "04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx"
+  },
+  {
+    "fecha": "2026-11-15",
+    "id": "07",
+    "nombre": "Santuari de Cura (Puig de Randa)",
+    "dificultad": "Media",
+    "km": 68,
+    "horas_conduccion": 1.2,
+    "salida": "10:00",
+    "gpx": "07-media-santuari-de-cura-puig-de-randa.gpx"
+  },
+  {
+    "fecha": "2026-11-22",
+    "id": "10",
+    "nombre": "Orient y Castell d'Alaró",
+    "dificultad": "Difícil",
+    "km": 74,
+    "horas_conduccion": 1.6,
+    "salida": "09:00",
+    "gpx": "10-dificil-orient-y-castell-d-alaro.gpx"
+  },
+  {
+    "fecha": "2026-11-29",
+    "id": "08",
+    "nombre": "Serra de Llevant: Artà y Cala Ratjada",
+    "dificultad": "Media",
+    "km": 169,
+    "horas_conduccion": 2.8,
+    "salida": "09:00",
+    "gpx": "08-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
+  },
+  {
+    "fecha": "2026-12-06",
+    "id": "09",
+    "nombre": "Cap de Formentor",
+    "dificultad": "Media",
+    "km": 167,
+    "horas_conduccion": 2.8,
+    "salida": "08:30",
+    "gpx": "09-media-cap-de-formentor.gpx"
+  },
+  {
+    "fecha": "2026-12-13",
+    "id": "12",
+    "nombre": "Sa Calobra y Nus de sa Corbata",
+    "dificultad": "Difícil",
+    "km": 143,
+    "horas_conduccion": 2.8,
+    "salida": "08:00",
+    "gpx": "12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
+  },
+  {
+    "fecha": "2026-12-20",
+    "id": "11",
+    "nombre": "Ma-10 completa: Andratx – Pollença",
+    "dificultad": "Difícil",
+    "km": 202,
+    "horas_conduccion": 3.9,
+    "salida": "08:00",
+    "gpx": "11-dificil-ma-10-completa-andratx-pollenca.gpx"
+  },
+  {
+    "fecha": "2026-12-27",
+    "id": "13",
+    "nombre": "Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor",
+    "dificultad": "Difícil",
+    "km": 219,
+    "horas_conduccion": 4.3,
+    "salida": "07:30",
+    "gpx": "13-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx"
+  }
+]
