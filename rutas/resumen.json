@@ -1,6 +1,6 @@
 [
   {
-    "fecha": "2026-10-04",
+    "fecha": "2026-10-18",
     "id": "01",
     "nombre": "Costa de Poniente: Andratx y Sant Elm",
     "dificultad": "Fácil",
@@ -10,7 +10,7 @@
     "gpx": "01-facil-costa-de-poniente-andratx-y-sant-elm.gpx"
   },
   {
-    "fecha": "2026-10-11",
+    "fecha": "2026-10-25",
     "id": "02",
     "nombre": "Migjorn: Cap Blanc y Colònia de Sant Jordi",
     "dificultad": "Fácil",
@@ -20,7 +20,7 @@
     "gpx": "02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx"
   },
   {
-    "fecha": "2026-10-18",
+    "fecha": "2026-11-01",
     "id": "05",
     "nombre": "Valldemossa, Deià y Sóller",
     "dificultad": "Media",
@@ -30,7 +30,7 @@
     "gpx": "05-media-valldemossa-deia-y-soller.gpx"
   },
   {
-    "fecha": "2026-10-25",
+    "fecha": "2026-11-08",
     "id": "03",
     "nombre": "Pla de Mallorca: Sineu, Petra y Porreres",
     "dificultad": "Fácil",
@@ -40,7 +40,7 @@
     "gpx": "03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx"
   },
   {
-    "fecha": "2026-11-01",
+    "fecha": "2026-11-15",
     "id": "06",
     "nombre": "Galilea, Puigpunyent y Es Capdellà",
     "dificultad": "Media",
@@ -50,7 +50,7 @@
     "gpx": "06-media-galilea-puigpunyent-y-es-capdella.gpx"
   },
   {
-    "fecha": "2026-11-08",
+    "fecha": "2026-11-22",
     "id": "04",
     "nombre": "Levante: Porto Cristo, Portocolom y Santanyí",
     "dificultad": "Fácil",
@@ -60,7 +60,7 @@
     "gpx": "04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx"
   },
   {
-    "fecha": "2026-11-15",
+    "fecha": "2026-11-29",
     "id": "07",
     "nombre": "Santuari de Cura (Puig de Randa)",
     "dificultad": "Media",
@@ -70,7 +70,7 @@
     "gpx": "07-media-santuari-de-cura-puig-de-randa.gpx"
   },
   {
-    "fecha": "2026-11-22",
+    "fecha": "2026-12-06",
     "id": "10",
     "nombre": "Orient y Castell d'Alaró",
     "dificultad": "Difícil",
@@ -80,7 +80,7 @@
     "gpx": "10-dificil-orient-y-castell-d-alaro.gpx"
   },
   {
-    "fecha": "2026-11-29",
+    "fecha": "2026-12-13",
     "id": "08",
     "nombre": "Serra de Llevant: Artà y Cala Ratjada",
     "dificultad": "Media",
@@ -90,7 +90,7 @@
     "gpx": "08-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
   },
   {
-    "fecha": "2026-12-06",
+    "fecha": "2026-12-20",
     "id": "09",
     "nombre": "Cap de Formentor",
     "dificultad": "Media",
@@ -100,7 +100,7 @@
     "gpx": "09-media-cap-de-formentor.gpx"
   },
   {
-    "fecha": "2026-12-13",
+    "fecha": "2026-12-27",
     "id": "12",
     "nombre": "Sa Calobra y Nus de sa Corbata",
     "dificultad": "Difícil",
@@ -110,7 +110,7 @@
     "gpx": "12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
   },
   {
-    "fecha": "2026-12-20",
+    "fecha": "2027-01-03",
     "id": "11",
     "nombre": "Ma-10 completa: Andratx – Pollença",
     "dificultad": "Difícil",
@@ -120,7 +120,7 @@
     "gpx": "11-dificil-ma-10-completa-andratx-pollenca.gpx"
   },
   {
-    "fecha": "2026-12-27",
+    "fecha": "2027-01-10",
     "id": "13",
     "nombre": "Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor",
     "dificultad": "Difícil",

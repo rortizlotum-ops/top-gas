@@ -1,6 +1,6 @@
 # top-gas · Rutas en moto por Mallorca 🏍️
 
-13 rutas en moto por Mallorca en formato **GPX, listas para subir a Wikiloc**. Están clasificadas por dificultad y repartidas en un **calendario de domingos** (del 4 de octubre al 27 de diciembre de 2026).
+13 rutas en moto por Mallorca en formato **GPX, listas para subir a Wikiloc**. Están clasificadas por dificultad y repartidas en un **calendario de domingos** (del 18 de octubre de 2026 al 10 de enero de 2027).
 
 Todas salen y vuelven a **Palma (Plaça d'Espanya)**. El trazado va por carreteras reales: se calculó con OSRM sobre OpenStreetMap, obligándolo a pasar por los puntos de cada ruta.
 
@@ -50,23 +50,23 @@ Todas salen y vuelven a **Palma (Plaça d'Espanya)**. El trazado va por carreter
 
 ## 📅 Calendario de domingos
 
-La dificultad va subiendo poco a poco y se van alternando zonas. Las rutas largas de la Tramuntana quedan para diciembre, cuando hay menos turistas y ciclistas.
+La dificultad va subiendo poco a poco y se van alternando zonas. Las rutas largas de la Tramuntana quedan para diciembre y enero, cuando hay menos turistas y ciclistas.
 
 | Domingo | Salida | Dificultad | Ruta | Km |
 |---|---|---|---|---|
-| 4 oct 2026 | 09:30 | 🟢 Fácil | 01 · Costa de Poniente: Andratx y Sant Elm | 85 |
-| 11 oct 2026 | 09:30 | 🟢 Fácil | 02 · Migjorn: Cap Blanc y Colònia de Sant Jordi | 147 |
-| 18 oct 2026 | 09:00 | 🟡 Media | 05 · Valldemossa, Deià y Sóller | 76 |
-| 25 oct 2026 | 09:30 | 🟢 Fácil | 03 · Pla de Mallorca: Sineu, Petra y Porreres | 112 |
-| 1 nov 2026 | 09:30 | 🟡 Media | 06 · Galilea, Puigpunyent y Es Capdellà | 57 |
-| 8 nov 2026 | 09:00 | 🟢 Fácil | 04 · Levante: Porto Cristo, Portocolom y Santanyí | 155 |
-| 15 nov 2026 | 10:00 | 🟡 Media | 07 · Santuari de Cura (Puig de Randa) | 68 |
-| 22 nov 2026 | 09:00 | 🔴 Difícil | 10 · Orient y Castell d'Alaró | 74 |
-| 29 nov 2026 | 09:00 | 🟡 Media | 08 · Serra de Llevant: Artà y Cala Ratjada | 169 |
-| 6 dic 2026 | 08:30 | 🟡 Media | 09 · Cap de Formentor | 167 |
-| 13 dic 2026 | 08:00 | 🔴 Difícil | 12 · Sa Calobra y Nus de sa Corbata | 143 |
-| 20 dic 2026 | 08:00 | 🔴 Difícil | 11 · Ma-10 completa: Andratx – Pollença | 202 |
-| 27 dic 2026 | 07:30 | 🔴 Difícil | 13 · Gran Vuelta Tramuntana | 219 |
+| 18 oct 2026 | 09:30 | 🟢 Fácil | 01 · Costa de Poniente: Andratx y Sant Elm | 85 |
+| 25 oct 2026 | 09:30 | 🟢 Fácil | 02 · Migjorn: Cap Blanc y Colònia de Sant Jordi | 147 |
+| 1 nov 2026 | 09:00 | 🟡 Media | 05 · Valldemossa, Deià y Sóller | 76 |
+| 8 nov 2026 | 09:30 | 🟢 Fácil | 03 · Pla de Mallorca: Sineu, Petra y Porreres | 112 |
+| 15 nov 2026 | 09:30 | 🟡 Media | 06 · Galilea, Puigpunyent y Es Capdellà | 57 |
+| 22 nov 2026 | 09:00 | 🟢 Fácil | 04 · Levante: Porto Cristo, Portocolom y Santanyí | 155 |
+| 29 nov 2026 | 10:00 | 🟡 Media | 07 · Santuari de Cura (Puig de Randa) | 68 |
+| 6 dic 2026 | 09:00 | 🔴 Difícil | 10 · Orient y Castell d'Alaró | 74 |
+| 13 dic 2026 | 09:00 | 🟡 Media | 08 · Serra de Llevant: Artà y Cala Ratjada | 169 |
+| 20 dic 2026 | 08:30 | 🟡 Media | 09 · Cap de Formentor | 167 |
+| 27 dic 2026 | 08:00 | 🔴 Difícil | 12 · Sa Calobra y Nus de sa Corbata | 143 |
+| 3 ene 2027 | 08:00 | 🔴 Difícil | 11 · Ma-10 completa: Andratx – Pollença | 202 |
+| 10 ene 2027 | 07:30 | 🔴 Difícil | 13 · Gran Vuelta Tramuntana | 219 |
 
 Para meterlo en tu agenda, importa `calendario-domingos.ics`. En Google Calendar: *Configuración → Importar y exportar → Importar*.
 
@@ -83,5 +83,5 @@ Wikiloc también funciona como *"Seguir ruta"* en la app del móvil, así que pu
 
 - Algunas carreteras (Formentor, Sa Calobra) pueden **cerrarse o restringirse** para vehículos privados en temporada alta. Consulta al Consell de Mallorca antes de salir.
 - En la Tramuntana hay muchos **ciclistas**, sobre todo los domingos por la mañana. Adelanta con margen.
-- Si llueve en diciembre, cambia las rutas difíciles por una fácil del sur o del Pla.
+- Si llueve en diciembre o enero, cambia las rutas difíciles por una fácil del sur o del Pla.
 - El recorrido lo calcula un planificador automático. Antes de salir, revisa el track en el mapa de Wikiloc.

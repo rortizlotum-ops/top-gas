@@ -91,7 +91,7 @@ RUTAS = [
 
 # Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
 ORDEN_CALENDARIO = ["01", "02", "05", "03", "06", "04", "07", "10", "08", "09", "12", "11", "13"]
-PRIMER_DOMINGO = date(2026, 10, 4)
+PRIMER_DOMINGO = date(2026, 10, 18)
 
 
 def osrm_route(puntos):
