@@ -1,0 +1,180 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//top-gas//Rutas moto Mallorca//ES
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Rutas en moto por Mallorca (domingos)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:top-gas-ruta-01-20261018@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261018T093000
+DTEND;TZID=Europe/Madrid:20261018T133000
+SUMMARY:🏍️ [Fácil] Costa de Poniente: Andratx y Sant Elm
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Fácil\nDistancia: 89 km\nCarreteras anchas y bien 
+ asfaltadas por la costa suroeste. Vistas a Sa Dragonera desde Sant Elm. Id
+ eal para empezar la temporada.\nGPX para Wikiloc: rutas/01-facil-costa-de-
+ poniente-andratx-y-sant-elm.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-02-20261025@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261025T093000
+DTEND;TZID=Europe/Madrid:20261025T163000
+SUMMARY:🏍️ [Fácil] Migjorn: Cap Blanc y Colònia de Sant Jordi
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Fácil\nDistancia: 168 km\nRectas y curvas suaves p
+ or el sur de la isla. Faro de Cap Blanc\, salinas de Es Trenc y café en C
+ olònia de Sant Jordi.\nGPX para Wikiloc: rutas/02-facil-migjorn-cap-blanc
+ -y-colonia-de-sant-jordi.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-05-20261101@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261101T090000
+DTEND;TZID=Europe/Madrid:20261101T130000
+SUMMARY:🏍️ [Media] Valldemossa\, Deià y Sóller
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Media\nDistancia: 72 km\nEl tramo más famoso de la
+  Ma-10 con curvas enlazadas y miradores al mar. Vuelta por el Coll de Sól
+ ler (carretera vieja\, 58 curvas).\nGPX para Wikiloc: rutas/05-media-valld
+ emossa-deia-y-soller.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-03-20261108@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261108T093000
+DTEND;TZID=Europe/Madrid:20261108T153000
+SUMMARY:🏍️ [Fácil] Pla de Mallorca: Sineu\, Petra y Porreres
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Fácil\nDistancia: 122 km\nCarreteras interiores tr
+ anquilas entre pueblos del Pla\, con poco tráfico el domingo por la maña
+ na.\nGPX para Wikiloc: rutas/03-facil-pla-de-mallorca-sineu-petra-y-porrer
+ es.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-06-20261115@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261115T093000
+DTEND;TZID=Europe/Madrid:20261115T123000
+SUMMARY:🏍️ [Media] Galilea\, Puigpunyent y Es Capdellà
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Media\nDistancia: 59 km\nCarretera estrecha y muy r
+ evirada por el interior de la Serra\, con pueblos de montaña y poco tráf
+ ico.\nGPX para Wikiloc: rutas/06-media-galilea-puigpunyent-y-es-capdella.g
+ px
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-04-20261122@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261122T090000
+DTEND;TZID=Europe/Madrid:20261122T170000
+SUMMARY:🏍️ [Fácil] Levante: Porto Cristo\, Portocolom y Santanyí
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Fácil\nDistancia: 189 km\nRecorrido largo pero sen
+ cillo por la costa este: calas\, puertos pesqueros y carreteras rápidas.\
+ nGPX para Wikiloc: rutas/04-facil-levante-porto-cristo-portocolom-y-santan
+ yi.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-07-20261129@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261129T100000
+DTEND;TZID=Europe/Madrid:20261129T140000
+SUMMARY:🏍️ [Media] Santuari de Cura (Puig de Randa)
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Media\nDistancia: 75 km\nSubida corta y revirada al
+  Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte f
+ inal.\nGPX para Wikiloc: rutas/07-media-santuari-de-cura-puig-de-randa.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-10-20261206@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261206T090000
+DTEND;TZID=Europe/Madrid:20261206T130000
+SUMMARY:🏍️ [Difícil] Orient y Castell d'Alaró
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Difícil\nDistancia: 73 km\nCarretera estrecha y ba
+ cheada por el valle de Orient\, curvas cerradas sin visibilidad y bajada a
+  Alaró. Muy técnica.\nGPX para Wikiloc: rutas/10-dificil-orient-y-castel
+ l-d-alaro.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-08-20261213@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261213T090000
+DTEND;TZID=Europe/Madrid:20261213T170000
+SUMMARY:🏍️ [Media] Serra de Llevant: Artà y Cala Ratjada
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Media\nDistancia: 183 km\nRuta larga hacia el norde
+ ste: curvas de Artà a Capdepera\, faro y puerto de Cala Ratjada\, regreso
+  por Son Servera.\nGPX para Wikiloc: rutas/08-media-serra-de-llevant-arta-
+ y-cala-ratjada.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-09-20261220@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261220T083000
+DTEND;TZID=Europe/Madrid:20261220T163000
+SUMMARY:🏍️ [Media] Cap de Formentor
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Media\nDistancia: 180 km\nCarretera espectacular ha
+ sta el faro. Salir temprano: tramo estrecho\, ciclistas y mucho tráfico a
+  partir de media mañana.\nGPX para Wikiloc: rutas/09-media-cap-de-forment
+ or.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-12-20261227@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20261227T080000
+DTEND;TZID=Europe/Madrid:20261227T150000
+SUMMARY:🏍️ [Difícil] Sa Calobra y Nus de sa Corbata
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Difícil\nDistancia: 153 km\nLa carretera más famo
+ sa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y
+  vuelta por el mismo sitio\; evitar horas de autocares.\nGPX para Wikiloc:
+  rutas/12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-11-20270103@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20270103T080000
+DTEND;TZID=Europe/Madrid:20270103T160000
+SUMMARY:🏍️ [Difícil] Ma-10 completa: Andratx – Pollença
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Difícil\nDistancia: 206 km\nLa carretera de la Ser
+ ra de Tramuntana entera: Estellencs\, Banyalbufar\, Deià\, Sóller\, Puig
+  Major\, Lluc y Pollença. Jornada completa\, regreso por Inca.\nGPX para 
+ Wikiloc: rutas/11-dificil-ma-10-completa-andratx-pollenca.gpx
+END:VEVENT
+BEGIN:VEVENT
+UID:top-gas-ruta-13-20270110@top-gas
+DTSTAMP:20260929T001847Z
+DTSTART;TZID=Europe/Madrid:20270110T073000
+DTEND;TZID=Europe/Madrid:20270110T163000
+SUMMARY:🏍️ [Difícil] Gran Vuelta Tramuntana: Sóller\, Sa Calobra y F
+ ormentor
+LOCATION:Palma (Plaça d'Espanya)
+DESCRIPTION:Dificultad: Difícil\nDistancia: 223 km\nLa ruta reina para cer
+ rar el año: Coll de Sóller\, Puig Major\, Sa Calobra y Formentor en un s
+ olo día. Solo para pilotos con experiencia.\nGPX para Wikiloc: rutas/13-d
+ ificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx
+END:VEVENT
+END:VCALENDAR
