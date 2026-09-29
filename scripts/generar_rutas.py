@@ -97,6 +97,7 @@ RUTAS = [
 # Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
 ORDEN_CALENDARIO = ["01", "02", "05", "03", "06", "04", "07", "10", "08", "09", "12", "11", "13"]
 PRIMER_DOMINGO = date(2026, 10, 18)
+VELOCIDAD_MEDIA_KMH = 45  # para estimar el tiempo de conducción sin paradas
 
 
 def decode_polyline6(s):
@@ -239,12 +240,13 @@ def main():
     info = {}
     for ruta in RUTAS:
         print("Calculando", ruta["id"], ruta["nombre"])
-        coords, dist, dur, autovia = calcular_ruta(ruta["puntos"])
+        coords, dist, _, autovia = calcular_ruta(ruta["puntos"])
         if autovia:
             print("  AVISO, tramos en autovía:", autovia)
         fichero = f"{ruta['id']}-{slug(ruta['dificultad'])}-{slug(ruta['nombre'])}.gpx"
         (GPX_DIR / fichero).write_text(gpx(ruta, coords, dist / 1000), encoding="utf-8")
-        info[ruta["id"]] = (ruta, dist / 1000, dur / 3600, fichero)
+        # El tiempo del planificador es muy prudente; se usa una media fija de moto por secundarias.
+        info[ruta["id"]] = (ruta, dist / 1000, dist / 1000 / VELOCIDAD_MEDIA_KMH, fichero)
         time.sleep(1)
 
     eventos = []

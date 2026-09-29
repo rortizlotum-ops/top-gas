@@ -24,29 +24,29 @@ Todas salen y vuelven a **Palma (Plaça d'Espanya)**. El trazado va por carreter
 ### 🟢 Fácil
 | # | Ruta | Km | Conducción* | GPX |
 |---|---|---|---|---|
-| 01 | Costa de Poniente: Andratx y Sant Elm | 89 | 2 h 54 min | [GPX](rutas/01-facil-costa-de-poniente-andratx-y-sant-elm.gpx) |
-| 02 | Migjorn: Cap Blanc y Colònia de Sant Jordi | 168 | 4 h 48 min | [GPX](rutas/02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx) |
-| 03 | Pla de Mallorca: Sineu, Petra y Porreres | 122 | 3 h 06 min | [GPX](rutas/03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx) |
-| 04 | Levante: Porto Cristo, Portocolom y Santanyí | 189 | 4 h 30 min | [GPX](rutas/04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx) |
+| 01 | Costa de Poniente: Andratx y Sant Elm | 89 | 1 h 59 min | [GPX](rutas/01-facil-costa-de-poniente-andratx-y-sant-elm.gpx) |
+| 02 | Migjorn: Cap Blanc y Colònia de Sant Jordi | 168 | 3 h 44 min | [GPX](rutas/02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx) |
+| 03 | Pla de Mallorca: Sineu, Petra y Porreres | 122 | 2 h 43 min | [GPX](rutas/03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx) |
+| 04 | Levante: Porto Cristo, Portocolom y Santanyí | 189 | 4 h 12 min | [GPX](rutas/04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx) |
 
 ### 🟡 Media
 | # | Ruta | Km | Conducción* | GPX |
 |---|---|---|---|---|
-| 05 | Valldemossa, Deià y Sóller (vuelta por el Coll de Sóller) | 72 | 2 h 18 min | [GPX](rutas/05-media-valldemossa-deia-y-soller.gpx) |
-| 06 | Galilea, Puigpunyent y Es Capdellà | 59 | 2 h 48 min | [GPX](rutas/06-media-galilea-puigpunyent-y-es-capdella.gpx) |
-| 07 | Santuari de Cura (Puig de Randa) | 75 | 2 h 24 min | [GPX](rutas/07-media-santuari-de-cura-puig-de-randa.gpx) |
-| 08 | Serra de Llevant: Artà y Cala Ratjada | 183 | 4 h 12 min | [GPX](rutas/08-media-serra-de-llevant-arta-y-cala-ratjada.gpx) |
-| 09 | Cap de Formentor | 180 | 5 h 06 min | [GPX](rutas/09-media-cap-de-formentor.gpx) |
+| 05 | Valldemossa, Deià y Sóller (vuelta por el Coll de Sóller) | 72 | 1 h 36 min | [GPX](rutas/05-media-valldemossa-deia-y-soller.gpx) |
+| 06 | Galilea, Puigpunyent y Es Capdellà | 59 | 1 h 19 min | [GPX](rutas/06-media-galilea-puigpunyent-y-es-capdella.gpx) |
+| 07 | Santuari de Cura (Puig de Randa) | 75 | 1 h 40 min | [GPX](rutas/07-media-santuari-de-cura-puig-de-randa.gpx) |
+| 08 | Serra de Llevant: Artà y Cala Ratjada | 183 | 4 h 04 min | [GPX](rutas/08-media-serra-de-llevant-arta-y-cala-ratjada.gpx) |
+| 09 | Cap de Formentor | 180 | 4 h 00 min | [GPX](rutas/09-media-cap-de-formentor.gpx) |
 
 ### 🔴 Difícil
 | # | Ruta | Km | Conducción* | GPX |
 |---|---|---|---|---|
-| 10 | Orient y Castell d'Alaró | 73 | 2 h 24 min | [GPX](rutas/10-dificil-orient-y-castell-d-alaro.gpx) |
-| 11 | Ma-10 completa: Andratx – Pollença | 206 | 6 h 24 min | [GPX](rutas/11-dificil-ma-10-completa-andratx-pollenca.gpx) |
-| 12 | Sa Calobra y Nus de sa Corbata | 153 | 4 h 36 min | [GPX](rutas/12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx) |
-| 13 | Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor | 223 | 6 h 36 min | [GPX](rutas/13-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx) |
+| 10 | Orient y Castell d'Alaró | 73 | 1 h 37 min | [GPX](rutas/10-dificil-orient-y-castell-d-alaro.gpx) |
+| 11 | Ma-10 completa: Andratx – Pollença | 206 | 4 h 35 min | [GPX](rutas/11-dificil-ma-10-completa-andratx-pollenca.gpx) |
+| 12 | Sa Calobra y Nus de sa Corbata | 153 | 3 h 24 min | [GPX](rutas/12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx) |
+| 13 | Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor | 223 | 4 h 57 min | [GPX](rutas/13-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx) |
 
-\* Tiempo de conducción estimado sin paradas. Es una estimación prudente del planificador por carreteras secundarias; con buen ritmo suele ser menos. En el calendario cada evento dura más porque incluye paradas y café.
+\* Tiempo de conducción estimado sin paradas. Calculado a una media de 45 km/h, un ritmo tranquilo de moto por carreteras secundarias. En el calendario cada evento dura más porque incluye paradas y café.
 
 ## 📅 Calendario de domingos
 
