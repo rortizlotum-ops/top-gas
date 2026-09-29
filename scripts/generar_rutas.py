@@ -3,8 +3,9 @@
 
 Uso:  python3 scripts/generar_rutas.py
 
-El trazado se calcula sobre carreteras reales con OSRM (router.project-osrm.org),
-forzando el paso por los puntos de cada ruta para que siga las carreteras elegidas.
+El trazado se calcula sobre carreteras reales con Valhalla (valhalla1.openstreetmap.de),
+perfil de moto y SIN autovías, forzando el paso por los puntos de cada ruta para que
+siga las carreteras elegidas. El script avisa si algún tramo acaba en autovía.
 """
 import json
 import math
@@ -16,7 +17,7 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent.parent
 GPX_DIR = ROOT / "rutas"
-OSRM = "https://router.project-osrm.org/route/v1/driving/"
+VALHALLA = "https://valhalla1.openstreetmap.de/route"
 
 PALMA = ("Palma (Plaça d'Espanya)", 39.5760, 2.6553)
 
@@ -62,9 +63,10 @@ RUTAS = [
                  ("Sant Llorenç des Cardassar", 39.6106, 3.2839), PALMA]),
     dict(id="09", nombre="Cap de Formentor", dificultad="Media", hora="08:30",
          desc="Carretera espectacular hasta el faro. Salir temprano: tramo estrecho, ciclistas y mucho tráfico a partir de media mañana.",
-         puntos=[PALMA, ("Inca", 39.7211, 2.9111), ("Port de Pollença", 39.9075, 3.0842),
+         puntos=[PALMA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Binissalem", 39.6872, 2.8439), ("Inca", 39.7211, 2.9111), ("Port de Pollença", 39.9075, 3.0842),
                  ("Mirador Es Colomer", 39.9235, 3.1178), ("Faro de Formentor", 39.9619, 3.2123),
-                 ("Port de Pollença", 39.9075, 3.0842), ("Pollença", 39.8772, 3.0161), PALMA]),
+                 ("Port de Pollença", 39.9075, 3.0842), ("Pollença", 39.8772, 3.0161),
+                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
     # ---------------- DIFÍCIL ----------------
     dict(id="10", nombre="Orient y Castell d'Alaró", dificultad="Difícil", hora="09:00",
          desc="Carretera estrecha y bacheada por el valle de Orient, curvas cerradas sin visibilidad y bajada a Alaró. Muy técnica.",
@@ -75,18 +77,21 @@ RUTAS = [
          puntos=[PALMA, ("Andratx", 39.5756, 2.4206), ("Estellencs", 39.6536, 2.4800), ("Banyalbufar", 39.6878, 2.5147),
                  ("Valldemossa", 39.7108, 2.6225), ("Deià", 39.7481, 2.6492), ("Sóller", 39.7667, 2.7150),
                  ("Embalse de Cúber", 39.7880, 2.8000), ("Santuari de Lluc", 39.8217, 2.8847),
-                 ("Pollença", 39.8772, 3.0161), ("Inca", 39.7211, 2.9111), PALMA]),
+                 ("Pollença", 39.8772, 3.0161), ("Inca", 39.7211, 2.9111),
+                 ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
     dict(id="12", nombre="Sa Calobra y Nus de sa Corbata", dificultad="Difícil", hora="08:00",
          desc="La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares.",
-         puntos=[PALMA, ("Inca", 39.7211, 2.9111), ("Selva", 39.7550, 2.9006), ("Santuari de Lluc", 39.8217, 2.8847),
+         puntos=[PALMA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Binissalem", 39.6872, 2.8439), ("Inca", 39.7211, 2.9111), ("Selva", 39.7550, 2.9006), ("Santuari de Lluc", 39.8217, 2.8847),
                  ("Coll dels Reis", 39.8298, 2.8425), ("Sa Calobra", 39.8510, 2.8063),
-                 ("Santuari de Lluc", 39.8217, 2.8847), ("Caimari", 39.7419, 2.8958), PALMA]),
+                 ("Santuari de Lluc", 39.8217, 2.8847), ("Caimari", 39.7419, 2.8958),
+                 ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
     dict(id="13", nombre="Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor", dificultad="Difícil", hora="07:30",
          desc="La ruta reina para cerrar el año: Coll de Sóller, Puig Major, Sa Calobra y Formentor en un solo día. Solo para pilotos con experiencia.",
          puntos=[PALMA, ("Coll de Sóller", 39.7358, 2.6902), ("Sóller", 39.7667, 2.7150), ("Fornalutx", 39.7822, 2.7408),
                  ("Embalse de Cúber", 39.7880, 2.8000), ("Sa Calobra", 39.8510, 2.8063),
                  ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
-                 ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842), PALMA]),
+                 ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
+                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
 ]
 
 # Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
@@ -94,17 +99,66 @@ ORDEN_CALENDARIO = ["01", "02", "05", "03", "06", "04", "07", "10", "08", "09", 
 PRIMER_DOMINGO = date(2026, 10, 18)
 
 
-def osrm_route(puntos):
-    coords = ";".join(f"{lon},{lat}" for _, lat, lon in puntos)
-    url = f"{OSRM}{coords}?overview=full&geometries=geojson&continue_straight=false"
+def decode_polyline6(s):
+    coords, i, lat, lon = [], 0, 0, 0
+    while i < len(s):
+        for eje in (0, 1):
+            shift = result = 0
+            while True:
+                b = ord(s[i]) - 63
+                i += 1
+                result |= (b & 0x1F) << shift
+                shift += 5
+                if b < 0x20:
+                    break
+            delta = ~(result >> 1) if result & 1 else result >> 1
+            if eje == 0:
+                lat += delta
+            else:
+                lon += delta
+        coords.append([lon / 1e6, lat / 1e6])
+    return coords
+
+
+def calcular_ruta(puntos):
+    """Devuelve (coords [lon, lat], metros, segundos, tramos en autovía).
+
+    Valhalla admite 10 puntos por consulta: las rutas largas se calculan por trozos."""
+    coords, dist, dur, autovia = [], 0.0, 0.0, []
+    i = 0
+    while i < len(puntos) - 1:
+        trozo = puntos[i:i + 10]
+        c, d, s, a = _calcular_trozo(trozo)
+        coords.extend(c if not coords else c[1:])
+        dist, dur, autovia = dist + d, dur + s, autovia + a
+        i += len(trozo) - 1
+        time.sleep(1.5)
+    return coords, dist, dur, autovia
+
+
+def _calcular_trozo(puntos):
+    body = json.dumps({
+        "locations": [{"lat": lat, "lon": lon, "type": "break"} for _, lat, lon in puntos],
+        "costing": "motorcycle",
+        # use_highways=0: evitar autovías y autopistas; use_trails=0: nada de pistas sin asfaltar
+        "costing_options": {"motorcycle": {"use_highways": 0, "use_trails": 0, "use_ferry": 0}},
+        "units": "kilometers",
+    }).encode()
     for intento in range(4):
         try:
-            with urllib.request.urlopen(url, timeout=60) as r:
-                data = json.load(r)
-            if data.get("code") == "Ok":
-                ruta = data["routes"][0]
-                return ruta["geometry"]["coordinates"], ruta["distance"], ruta["duration"]
-            raise RuntimeError(data)
+            req = urllib.request.Request(VALHALLA, data=body, headers={
+                "Content-Type": "application/json", "User-Agent": "top-gas-rutas-moto/1.0"})
+            with urllib.request.urlopen(req, timeout=90) as r:
+                trip = json.load(r)["trip"]
+            coords, autovia = [], []
+            for leg in trip["legs"]:
+                shape = decode_polyline6(leg["shape"])
+                coords.extend(shape if not coords else shape[1:])
+                for m in leg["maneuvers"]:
+                    if m.get("highway"):
+                        autovia.append(", ".join(m.get("street_names", [])) or m["instruction"])
+            s = trip["summary"]
+            return coords, s["length"] * 1000, s["time"], autovia
         except Exception as e:  # noqa: BLE001
             if intento == 3:
                 raise
@@ -185,7 +239,9 @@ def main():
     info = {}
     for ruta in RUTAS:
         print("Calculando", ruta["id"], ruta["nombre"])
-        coords, dist, dur = osrm_route(ruta["puntos"])
+        coords, dist, dur, autovia = calcular_ruta(ruta["puntos"])
+        if autovia:
+            print("  AVISO, tramos en autovía:", autovia)
         fichero = f"{ruta['id']}-{slug(ruta['dificultad'])}-{slug(ruta['nombre'])}.gpx"
         (GPX_DIR / fichero).write_text(gpx(ruta, coords, dist / 1000), encoding="utf-8")
         info[ruta["id"]] = (ruta, dist / 1000, dur / 3600, fichero)
