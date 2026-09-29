@@ -68,7 +68,7 @@ La dificultad va subiendo poco a poco y se van alternando zonas. Las rutas larga
 | 3 ene 2027 | 08:00 | 🔴 Difícil | 11 · Ma-10 completa: Andratx – Pollença | 206 |
 | 10 ene 2027 | 07:30 | 🔴 Difícil | 13 · Gran Vuelta Tramuntana | 223 |
 
-Para meterlo en tu agenda, importa `calendario-domingos.ics`. En Google Calendar: *Configuración → Importar y exportar → Importar*.
+Para meterlo en tu agenda, importa `calendario-domingos.ics`. En Google Calendar: *Configuración → Importar y exportar → Importar*. Cada evento lleva el enlace de descarga directa de su GPX para Wikiloc (funciona cuando el repositorio es público).
 
 ## Cómo subir una ruta a Wikiloc
 

@@ -97,6 +97,8 @@ RUTAS = [
 # Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
 ORDEN_CALENDARIO = ["01", "02", "05", "03", "06", "04", "07", "10", "08", "09", "12", "11", "13"]
 PRIMER_DOMINGO = date(2026, 10, 18)
+# Enlace de descarga directa de los GPX (funciona cuando el repositorio es público)
+DESCARGA_GPX = "https://raw.githubusercontent.com/rortizlotum-ops/top-gas/main/rutas/"
 VELOCIDAD_MEDIA_KMH = 45  # para estimar el tiempo de conducción sin paradas
 
 
@@ -213,13 +215,15 @@ def ics(eventos):
         h, m = map(int, ruta["hora"].split(":"))
         inicio = datetime(dia.year, dia.month, dia.day, h, m)
         fin = inicio + timedelta(hours=math.ceil(horas * 1.5 + 1))  # paradas incluidas
-        desc = (f"Dificultad: {ruta['dificultad']}\\nDistancia: {dist_km:.0f} km\\n{ruta['desc']}\\n"
-                f"GPX para Wikiloc: rutas/{fichero}").replace(",", "\\,").replace(";", "\\;")
+        enlace = f"{DESCARGA_GPX}{fichero}"
+        desc = (f"Dificultad: {ruta['dificultad']}\\nDistancia: {dist_km:.0f} km\\n{ruta['desc']}\\n\\n"
+                f"Descargar GPX para Wikiloc: {enlace}").replace(",", "\\,").replace(";", "\\;")
         out += ["BEGIN:VEVENT", f"UID:top-gas-ruta-{ruta['id']}-{dia:%Y%m%d}@top-gas", f"DTSTAMP:{ahora}",
                 f"DTSTART;TZID=Europe/Madrid:{inicio:%Y%m%dT%H%M%S}",
                 f"DTEND;TZID=Europe/Madrid:{fin:%Y%m%dT%H%M%S}",
                 f"SUMMARY:🏍️ [{ruta['dificultad']}] {ruta['nombre']}".replace(",", "\\,"),
-                f"LOCATION:{PALMA[0]}".replace(",", "\\,"), f"DESCRIPTION:{desc}", "END:VEVENT"]
+                f"LOCATION:{PALMA[0]}".replace(",", "\\,"), f"DESCRIPTION:{desc}", f"URL:{enlace}",
+                "END:VEVENT"]
     out.append("END:VCALENDAR")
     # plegado de líneas >75 octetos (RFC 5545)
     plegado = []
