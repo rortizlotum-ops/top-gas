@@ -1,132 +1,137 @@
 [
   {
-    "fecha": "2026-10-18",
     "id": "01",
     "nombre": "Costa de Poniente: Andratx y Sant Elm",
     "dificultad": "Fácil",
-    "km": 89,
-    "horas_conduccion": 2.0,
+    "km": 127,
+    "horas_conduccion": 2.8,
     "salida": "09:30",
     "gpx": "01-facil-costa-de-poniente-andratx-y-sant-elm.gpx"
   },
   {
-    "fecha": "2026-10-25",
     "id": "02",
     "nombre": "Migjorn: Cap Blanc y Colònia de Sant Jordi",
     "dificultad": "Fácil",
-    "km": 168,
+    "km": 165,
     "horas_conduccion": 3.7,
     "salida": "09:30",
     "gpx": "02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx"
   },
   {
-    "fecha": "2026-11-01",
-    "id": "05",
-    "nombre": "Valldemossa, Deià y Sóller",
-    "dificultad": "Media",
-    "km": 72,
-    "horas_conduccion": 1.6,
-    "salida": "09:00",
-    "gpx": "05-media-valldemossa-deia-y-soller.gpx"
-  },
-  {
-    "fecha": "2026-11-08",
     "id": "03",
     "nombre": "Pla de Mallorca: Sineu, Petra y Porreres",
     "dificultad": "Fácil",
-    "km": 122,
-    "horas_conduccion": 2.7,
+    "km": 99,
+    "horas_conduccion": 2.2,
     "salida": "09:30",
     "gpx": "03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx"
   },
   {
-    "fecha": "2026-11-15",
-    "id": "06",
-    "nombre": "Galilea, Puigpunyent y Es Capdellà",
-    "dificultad": "Media",
-    "km": 59,
-    "horas_conduccion": 1.3,
-    "salida": "09:30",
-    "gpx": "06-media-galilea-puigpunyent-y-es-capdella.gpx"
-  },
-  {
-    "fecha": "2026-11-22",
     "id": "04",
     "nombre": "Levante: Porto Cristo, Portocolom y Santanyí",
     "dificultad": "Fácil",
-    "km": 189,
-    "horas_conduccion": 4.2,
+    "km": 177,
+    "horas_conduccion": 3.9,
     "salida": "09:00",
     "gpx": "04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx"
   },
   {
-    "fecha": "2026-11-29",
+    "id": "05",
+    "nombre": "Ruta Faros 1 · Sur: Cap Blanc, Ses Salines y Portocolom",
+    "dificultad": "Fácil",
+    "km": 202,
+    "horas_conduccion": 4.5,
+    "salida": "09:00",
+    "gpx": "05-facil-ruta-faros-1-sur-cap-blanc-ses-salines-y-portocolom.gpx"
+  },
+  {
+    "id": "06",
+    "nombre": "Valldemossa, Deià y Sóller",
+    "dificultad": "Media",
+    "km": 69,
+    "horas_conduccion": 1.5,
+    "salida": "09:00",
+    "gpx": "06-media-valldemossa-deia-y-soller.gpx"
+  },
+  {
     "id": "07",
+    "nombre": "Galilea, Puigpunyent y Es Capdellà",
+    "dificultad": "Media",
+    "km": 93,
+    "horas_conduccion": 2.1,
+    "salida": "09:30",
+    "gpx": "07-media-galilea-puigpunyent-y-es-capdella.gpx"
+  },
+  {
+    "id": "08",
     "nombre": "Santuari de Cura (Puig de Randa)",
     "dificultad": "Media",
-    "km": 75,
-    "horas_conduccion": 1.7,
-    "salida": "10:00",
-    "gpx": "07-media-santuari-de-cura-puig-de-randa.gpx"
-  },
-  {
-    "fecha": "2026-12-06",
-    "id": "10",
-    "nombre": "Orient y Castell d'Alaró",
-    "dificultad": "Difícil",
     "km": 73,
     "horas_conduccion": 1.6,
-    "salida": "09:00",
-    "gpx": "10-dificil-orient-y-castell-d-alaro.gpx"
+    "salida": "10:00",
+    "gpx": "08-media-santuari-de-cura-puig-de-randa.gpx"
   },
   {
-    "fecha": "2026-12-13",
-    "id": "08",
+    "id": "09",
     "nombre": "Serra de Llevant: Artà y Cala Ratjada",
     "dificultad": "Media",
-    "km": 183,
-    "horas_conduccion": 4.1,
+    "km": 170,
+    "horas_conduccion": 3.8,
     "salida": "09:00",
-    "gpx": "08-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
+    "gpx": "09-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
   },
   {
-    "fecha": "2026-12-20",
-    "id": "09",
+    "id": "10",
     "nombre": "Cap de Formentor",
     "dificultad": "Media",
-    "km": 180,
-    "horas_conduccion": 4.0,
+    "km": 156,
+    "horas_conduccion": 3.5,
     "salida": "08:30",
-    "gpx": "09-media-cap-de-formentor.gpx"
+    "gpx": "10-media-cap-de-formentor.gpx"
   },
   {
-    "fecha": "2026-12-27",
-    "id": "12",
-    "nombre": "Sa Calobra y Nus de sa Corbata",
-    "dificultad": "Difícil",
-    "km": 153,
-    "horas_conduccion": 3.4,
-    "salida": "08:00",
-    "gpx": "12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
-  },
-  {
-    "fecha": "2027-01-03",
     "id": "11",
+    "nombre": "Orient y Castell d'Alaró",
+    "dificultad": "Difícil",
+    "km": 60,
+    "horas_conduccion": 1.3,
+    "salida": "09:00",
+    "gpx": "11-dificil-orient-y-castell-d-alaro.gpx"
+  },
+  {
+    "id": "12",
     "nombre": "Ma-10 completa: Andratx – Pollença",
     "dificultad": "Difícil",
-    "km": 206,
-    "horas_conduccion": 4.6,
+    "km": 217,
+    "horas_conduccion": 4.8,
     "salida": "08:00",
-    "gpx": "11-dificil-ma-10-completa-andratx-pollenca.gpx"
+    "gpx": "12-dificil-ma-10-completa-andratx-pollenca.gpx"
   },
   {
-    "fecha": "2027-01-10",
     "id": "13",
+    "nombre": "Sa Calobra y Nus de sa Corbata",
+    "dificultad": "Difícil",
+    "km": 128,
+    "horas_conduccion": 2.9,
+    "salida": "08:00",
+    "gpx": "13-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
+  },
+  {
+    "id": "14",
     "nombre": "Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor",
     "dificultad": "Difícil",
-    "km": 223,
-    "horas_conduccion": 5.0,
+    "km": 214,
+    "horas_conduccion": 4.8,
     "salida": "07:30",
-    "gpx": "13-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx"
+    "gpx": "14-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx"
+  },
+  {
+    "id": "15",
+    "nombre": "Ruta Faros 2 · Norte: Cap Gros y Formentor",
+    "dificultad": "Difícil",
+    "km": 204,
+    "horas_conduccion": 4.5,
+    "salida": "08:00",
+    "gpx": "15-dificil-ruta-faros-2-norte-cap-gros-y-formentor.gpx"
   }
 ]
