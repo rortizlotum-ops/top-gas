@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>15 · Faros del Norte: Cap Gros y Formentor (Difícil)</name><desc>Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. Jornada larga y muy revirada. Dificultad: Difícil. Distancia aprox.: 204 km.</desc><keywords>moto, mallorca, difícil</keywords></metadata>
+  <metadata><name>15 · Ruta Faros 2 · Norte: Cap Gros y Formentor (Difícil)</name><desc>Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. Jornada larga y muy revirada. Dificultad: Difícil. Distancia aprox.: 204 km.</desc><keywords>moto, mallorca, difícil</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
   <wpt lat="39.735800" lon="2.690200"><name>Coll de Sóller</name></wpt>
   <wpt lat="39.766700" lon="2.715000"><name>Sóller</name></wpt>
@@ -14,7 +14,7 @@
   <wpt lat="39.721100" lon="2.911100"><name>Inca</name></wpt>
   <wpt lat="39.687200" lon="2.843900"><name>Binissalem</name></wpt>
   <wpt lat="39.650300" lon="2.773600"><name>Santa Maria del Camí</name></wpt>
-  <trk><name>15 · Faros del Norte: Cap Gros y Formentor (Difícil)</name><desc>Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. Jornada larga y muy revirada. Dificultad: Difícil. Distancia aprox.: 204 km.</desc><type>Moto</type><trkseg>
+  <trk><name>15 · Ruta Faros 2 · Norte: Cap Gros y Formentor (Difícil)</name><desc>Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. Jornada larga y muy revirada. Dificultad: Difícil. Distancia aprox.: 204 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>

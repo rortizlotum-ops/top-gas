@@ -6,8 +6,7 @@
     "km": 127,
     "horas_conduccion": 2.8,
     "salida": "09:30",
-    "gpx": "01-facil-costa-de-poniente-andratx-y-sant-elm.gpx",
-    "fecha": "2026-10-18"
+    "gpx": "01-facil-costa-de-poniente-andratx-y-sant-elm.gpx"
   },
   {
     "id": "02",
@@ -16,8 +15,7 @@
     "km": 165,
     "horas_conduccion": 3.7,
     "salida": "09:30",
-    "gpx": "02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx",
-    "fecha": "2026-10-25"
+    "gpx": "02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx"
   },
   {
     "id": "03",
@@ -26,8 +24,7 @@
     "km": 99,
     "horas_conduccion": 2.2,
     "salida": "09:30",
-    "gpx": "03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx",
-    "fecha": "2026-11-08"
+    "gpx": "03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx"
   },
   {
     "id": "04",
@@ -36,18 +33,16 @@
     "km": 177,
     "horas_conduccion": 3.9,
     "salida": "09:00",
-    "gpx": "04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx",
-    "fecha": "2026-11-22"
+    "gpx": "04-facil-levante-porto-cristo-portocolom-y-santanyi.gpx"
   },
   {
     "id": "05",
-    "nombre": "Faros del Sur: Cap Blanc, Ses Salines y Portocolom",
+    "nombre": "Ruta Faros 1 · Sur: Cap Blanc, Ses Salines y Portocolom",
     "dificultad": "Fácil",
     "km": 202,
     "horas_conduccion": 4.5,
     "salida": "09:00",
-    "gpx": "05-facil-faros-del-sur-cap-blanc-ses-salines-y-portocolom.gpx",
-    "fecha": null
+    "gpx": "05-facil-ruta-faros-1-sur-cap-blanc-ses-salines-y-portocolom.gpx"
   },
   {
     "id": "06",
@@ -56,8 +51,7 @@
     "km": 69,
     "horas_conduccion": 1.5,
     "salida": "09:00",
-    "gpx": "06-media-valldemossa-deia-y-soller.gpx",
-    "fecha": "2026-11-01"
+    "gpx": "06-media-valldemossa-deia-y-soller.gpx"
   },
   {
     "id": "07",
@@ -66,8 +60,7 @@
     "km": 93,
     "horas_conduccion": 2.1,
     "salida": "09:30",
-    "gpx": "07-media-galilea-puigpunyent-y-es-capdella.gpx",
-    "fecha": "2026-11-15"
+    "gpx": "07-media-galilea-puigpunyent-y-es-capdella.gpx"
   },
   {
     "id": "08",
@@ -76,8 +69,7 @@
     "km": 73,
     "horas_conduccion": 1.6,
     "salida": "10:00",
-    "gpx": "08-media-santuari-de-cura-puig-de-randa.gpx",
-    "fecha": "2026-11-29"
+    "gpx": "08-media-santuari-de-cura-puig-de-randa.gpx"
   },
   {
     "id": "09",
@@ -86,8 +78,7 @@
     "km": 170,
     "horas_conduccion": 3.8,
     "salida": "09:00",
-    "gpx": "09-media-serra-de-llevant-arta-y-cala-ratjada.gpx",
-    "fecha": "2026-12-13"
+    "gpx": "09-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
   },
   {
     "id": "10",
@@ -96,8 +87,7 @@
     "km": 156,
     "horas_conduccion": 3.5,
     "salida": "08:30",
-    "gpx": "10-media-cap-de-formentor.gpx",
-    "fecha": "2026-12-20"
+    "gpx": "10-media-cap-de-formentor.gpx"
   },
   {
     "id": "11",
@@ -106,8 +96,7 @@
     "km": 60,
     "horas_conduccion": 1.3,
     "salida": "09:00",
-    "gpx": "11-dificil-orient-y-castell-d-alaro.gpx",
-    "fecha": "2026-12-06"
+    "gpx": "11-dificil-orient-y-castell-d-alaro.gpx"
   },
   {
     "id": "12",
@@ -116,8 +105,7 @@
     "km": 217,
     "horas_conduccion": 4.8,
     "salida": "08:00",
-    "gpx": "12-dificil-ma-10-completa-andratx-pollenca.gpx",
-    "fecha": "2027-01-03"
+    "gpx": "12-dificil-ma-10-completa-andratx-pollenca.gpx"
   },
   {
     "id": "13",
@@ -126,8 +114,7 @@
     "km": 128,
     "horas_conduccion": 2.9,
     "salida": "08:00",
-    "gpx": "13-dificil-sa-calobra-y-nus-de-sa-corbata.gpx",
-    "fecha": "2026-12-27"
+    "gpx": "13-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
   },
   {
     "id": "14",
@@ -136,17 +123,15 @@
     "km": 214,
     "horas_conduccion": 4.8,
     "salida": "07:30",
-    "gpx": "14-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx",
-    "fecha": "2027-01-10"
+    "gpx": "14-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx"
   },
   {
     "id": "15",
-    "nombre": "Faros del Norte: Cap Gros y Formentor",
+    "nombre": "Ruta Faros 2 · Norte: Cap Gros y Formentor",
     "dificultad": "Difícil",
     "km": 204,
     "horas_conduccion": 4.5,
     "salida": "08:00",
-    "gpx": "15-dificil-faros-del-norte-cap-gros-y-formentor.gpx",
-    "fecha": null
+    "gpx": "15-dificil-ruta-faros-2-norte-cap-gros-y-formentor.gpx"
   }
 ]

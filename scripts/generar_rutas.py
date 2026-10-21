@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera las rutas en moto por Mallorca (GPX para Wikiloc) y el calendario de domingos (ICS).
+"""Genera las rutas en moto por Mallorca (GPX para Wikiloc) y su resumen (rutas/resumen.json).
 
 Uso:  python3 scripts/generar_rutas.py
 
@@ -8,10 +8,8 @@ perfil de moto y SIN autovías, forzando el paso por los puntos de cada ruta par
 siga las carreteras elegidas. El script avisa si algún tramo acaba en autovía.
 """
 import json
-import math
 import time
 import urllib.request
-from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -43,7 +41,7 @@ RUTAS = [
          desc="Recorrido largo pero sencillo por la costa este: calas, puertos pesqueros y carreteras rápidas.",
          puntos=[SALIDA, ("Manacor", 39.5700, 3.2094), ("Porto Cristo", 39.5406, 3.3308),
                  ("Portocolom", 39.4167, 3.2583), ("Santanyí", 39.3542, 3.1283), ("Campos", 39.4306, 3.0194), SALIDA]),
-    dict(id="05", nombre="Faros del Sur: Cap Blanc, Ses Salines y Portocolom", dificultad="Fácil", hora="09:00",
+    dict(id="05", nombre="Ruta Faros 1 · Sur: Cap Blanc, Ses Salines y Portocolom", dificultad="Fácil", hora="09:00",
          desc="Tres faros de la costa sur y levante por carreteras llanas y anchas: Cap Blanc sobre los acantilados, "
               "Cap de ses Salines en el punto más al sur de la isla y el faro de Portocolom a la entrada del puerto. "
               "Vuelta por Felanitx y Porreres.",
@@ -100,7 +98,7 @@ RUTAS = [
                  ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
                  ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
                  ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
-    dict(id="15", nombre="Faros del Norte: Cap Gros y Formentor", dificultad="Difícil", hora="08:00",
+    dict(id="15", nombre="Ruta Faros 2 · Norte: Cap Gros y Formentor", dificultad="Difícil", hora="08:00",
          desc="Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc "
               "y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. "
               "Jornada larga y muy revirada.",
@@ -113,13 +111,7 @@ RUTAS = [
                  ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
 ]
 
-# Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
 # Rutas numeradas por dificultad: 01-05 fáciles, 06-10 medias, 11-15 difíciles.
-# Calendario de domingos (ids de ruta en orden de fecha a partir de PRIMER_DOMINGO).
-ORDEN_CALENDARIO = ["01", "02", "06", "03", "07", "04", "08", "11", "09", "10", "13", "12", "14"]
-PRIMER_DOMINGO = date(2026, 10, 18)
-# Enlace de descarga directa de los GPX (funciona cuando el repositorio es público)
-DESCARGA_GPX = "https://raw.githubusercontent.com/rortizlotum-ops/top-gas/main/rutas/"
 VELOCIDAD_MEDIA_KMH = 45  # para estimar el tiempo de conducción sin paradas
 
 
@@ -221,45 +213,6 @@ def gpx(ruta, coords, dist_km):
     return "\n".join(lineas) + "\n"
 
 
-def ics(eventos):
-    ahora = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//top-gas//Rutas moto Mallorca//ES",
-           "CALSCALE:GREGORIAN", "X-WR-CALNAME:Rutas en moto por Mallorca (domingos)",
-           "X-WR-TIMEZONE:Europe/Madrid",
-           "BEGIN:VTIMEZONE", "TZID:Europe/Madrid",
-           "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST",
-           "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
-           "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET",
-           "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
-           "END:VTIMEZONE"]
-    for dia, ruta, dist_km, horas, fichero in eventos:
-        h, m = map(int, ruta["hora"].split(":"))
-        inicio = datetime(dia.year, dia.month, dia.day, h, m)
-        fin = inicio + timedelta(hours=math.ceil(horas * 1.5 + 1))  # paradas incluidas
-        enlace = f"{DESCARGA_GPX}{fichero}"
-        desc = (f"Dificultad: {ruta['dificultad']}\\nDistancia: {dist_km:.0f} km\\n{ruta['desc']}\\n\\n"
-                f"Descargar GPX para Wikiloc: {enlace}").replace(",", "\\,").replace(";", "\\;")
-        out += ["BEGIN:VEVENT", f"UID:top-gas-ruta-{ruta['id']}-{dia:%Y%m%d}@top-gas", f"DTSTAMP:{ahora}",
-                f"DTSTART;TZID=Europe/Madrid:{inicio:%Y%m%dT%H%M%S}",
-                f"DTEND;TZID=Europe/Madrid:{fin:%Y%m%dT%H%M%S}",
-                f"SUMMARY:🏍️ [{ruta['dificultad']}] {ruta['nombre']}".replace(",", "\\,"),
-                f"LOCATION:{SALIDA[0]}".replace(",", "\\,"), f"DESCRIPTION:{desc}", f"URL:{enlace}",
-                "END:VEVENT"]
-    out.append("END:VCALENDAR")
-    # plegado de líneas >75 octetos (RFC 5545)
-    plegado = []
-    for linea in out:
-        b = linea.encode()
-        while len(b) > 75:
-            corte = 75
-            while (b[corte] & 0xC0) == 0x80:
-                corte -= 1
-            plegado.append(b[:corte].decode())
-            b = b" " + b[corte:]
-        plegado.append(b.decode())
-    return "\r\n".join(plegado) + "\r\n"
-
-
 def main():
     GPX_DIR.mkdir(exist_ok=True)
     for viejo in GPX_DIR.glob("*.gpx"):
@@ -276,16 +229,9 @@ def main():
         info[ruta["id"]] = (ruta, dist / 1000, dist / 1000 / VELOCIDAD_MEDIA_KMH, fichero)
         time.sleep(1)
 
-    eventos = []
-    for i, rid in enumerate(ORDEN_CALENDARIO):
-        ruta, km, h, fichero = info[rid]
-        eventos.append((PRIMER_DOMINGO + timedelta(weeks=i), ruta, km, h, fichero))
-    (ROOT / "calendario-domingos.ics").write_text(ics(eventos), encoding="utf-8", newline="")
-
-    # Resumen en JSON (catálogo completo, con fecha si la ruta está en el calendario)
-    fechas = {r["id"]: d.isoformat() for d, r, *_ in eventos}
+    # Resumen en JSON (catálogo completo)
     resumen = [dict(id=rid, nombre=r["nombre"], dificultad=r["dificultad"], km=round(km),
-                    horas_conduccion=round(h, 1), salida=r["hora"], gpx=f, fecha=fechas.get(rid))
+                    horas_conduccion=round(h, 1), salida=r["hora"], gpx=f)
                for rid, (r, km, h, f) in sorted(info.items())]
     (ROOT / "rutas" / "resumen.json").write_text(json.dumps(resumen, ensure_ascii=False, indent=2) + "\n",
                                                  encoding="utf-8")
