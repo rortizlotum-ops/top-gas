@@ -46,6 +46,12 @@ Todas salen y vuelven a **Palma (Plaça d'Espanya)**. El trazado va por carreter
 | 12 | Sa Calobra y Nus de sa Corbata | 153 | 3 h 24 min | [GPX](rutas/12-dificil-sa-calobra-y-nus-de-sa-corbata.gpx) |
 | 13 | Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor | 223 | 4 h 57 min | [GPX](rutas/13-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx) |
 
+### 🗼 Rutas de faros (extra, fuera del calendario)
+| # | Ruta | Dificultad | Km | Conducción* | GPX |
+|---|---|---|---|---|---|
+| 14 | Faros del Sur: Cap Blanc, Ses Salines y Portocolom | 🟢 Fácil | 205 | 4 h 34 min | [GPX](rutas/14-facil-faros-del-sur-cap-blanc-ses-salines-y-portocolom.gpx) |
+| 15 | Faros del Norte: Cap Gros y Formentor | 🔴 Difícil | 213 | 4 h 44 min | [GPX](rutas/15-dificil-faros-del-norte-cap-gros-y-formentor.gpx) |
+
 \* Tiempo de conducción estimado sin paradas. Calculado a una media de 45 km/h, un ritmo tranquilo de moto por carreteras secundarias. En el calendario cada evento dura más porque incluye paradas y café.
 
 ## 📅 Calendario de domingos

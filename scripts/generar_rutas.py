@@ -92,6 +92,26 @@ RUTAS = [
                  ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
                  ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
                  ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
+    # ---------------- RUTAS DE FAROS (extra, fuera del calendario) ----------------
+    dict(id="14", nombre="Faros del Sur: Cap Blanc, Ses Salines y Portocolom", dificultad="Fácil", hora="09:00",
+         desc="Tres faros de la costa sur y levante por carreteras llanas y anchas: Cap Blanc sobre los acantilados, "
+              "Cap de ses Salines en el punto más al sur de la isla y el faro de Portocolom a la entrada del puerto. "
+              "Vuelta por Felanitx y Porreres.",
+         puntos=[PALMA, ("Llucmajor", 39.4903, 2.8908), ("Faro de Cap Blanc", 39.3636, 2.7896),
+                 ("Ses Salines", 39.3378, 3.0536), ("Faro de Cap de ses Salines", 39.2650, 3.0536),
+                 ("Santanyí", 39.3542, 3.1283), ("Faro de Portocolom", 39.4161, 3.2731),
+                 ("Felanitx", 39.4692, 3.1481), ("Porreres", 39.5147, 3.0214), ("Montuïri", 39.5667, 2.9833), PALMA]),
+    dict(id="15", nombre="Faros del Norte: Cap Gros y Formentor", dificultad="Difícil", hora="08:00",
+         desc="Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc "
+              "y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. "
+              "Jornada larga y muy revirada.",
+         puntos=[PALMA, ("Coll de Sóller", 39.7358, 2.6902), ("Sóller", 39.7667, 2.7150),
+                 ("Port de Sóller", 39.7975, 2.6956), ("Faro de Cap Gros", 39.7969, 2.6847),
+                 ("Sóller", 39.7667, 2.7150), ("Embalse de Cúber", 39.7880, 2.8000),
+                 ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
+                 ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
+                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439),
+                 ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
 ]
 
 # Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
