@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 GPX_DIR = ROOT / "rutas"
 VALHALLA = "https://valhalla1.openstreetmap.de/route"
 
-PALMA = ("Palma (Plaça d'Espanya)", 39.5760, 2.6553)
+SALIDA = ("Gasolinera BP · Polígono de Marratxí", 39.6259, 2.7238)
 
 # Cada ruta: id, nombre, dificultad, salida (hora), descripción, puntos (nombre, lat, lon).
 # Los puntos se recorren en orden; el primero y el último marcan salida y llegada.
@@ -27,95 +27,96 @@ RUTAS = [
     # ---------------- FÁCIL ----------------
     dict(id="01", nombre="Costa de Poniente: Andratx y Sant Elm", dificultad="Fácil", hora="09:30",
          desc="Carreteras anchas y bien asfaltadas por la costa suroeste. Vistas a Sa Dragonera desde Sant Elm. Ideal para empezar la temporada.",
-         puntos=[PALMA, ("Andratx", 39.5756, 2.4206), ("Port d'Andratx", 39.5436, 2.3866),
+         puntos=[SALIDA, ("Andratx", 39.5756, 2.4206), ("Port d'Andratx", 39.5436, 2.3866),
                  ("Sant Elm (mirador de Sa Dragonera)", 39.5791, 2.3540), ("S'Arracó", 39.5842, 2.3900),
-                 ("Andratx", 39.5756, 2.4206), PALMA]),
+                 ("Andratx", 39.5756, 2.4206), SALIDA]),
     dict(id="02", nombre="Migjorn: Cap Blanc y Colònia de Sant Jordi", dificultad="Fácil", hora="09:30",
          desc="Rectas y curvas suaves por el sur de la isla. Faro de Cap Blanc, salinas de Es Trenc y café en Colònia de Sant Jordi.",
-         puntos=[PALMA, ("Llucmajor", 39.4903, 2.8908), ("Faro de Cap Blanc", 39.3636, 2.7896),
+         puntos=[SALIDA, ("Llucmajor", 39.4903, 2.8908), ("Faro de Cap Blanc", 39.3636, 2.7896),
                  ("Ses Salines", 39.3378, 3.0536), ("Colònia de Sant Jordi", 39.3172, 2.9936),
-                 ("Campos", 39.4306, 3.0194), PALMA]),
+                 ("Campos", 39.4306, 3.0194), SALIDA]),
     dict(id="03", nombre="Pla de Mallorca: Sineu, Petra y Porreres", dificultad="Fácil", hora="09:30",
          desc="Carreteras interiores tranquilas entre pueblos del Pla, con poco tráfico el domingo por la mañana.",
-         puntos=[PALMA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Sineu", 39.6428, 3.0114),
-                 ("Petra", 39.6136, 3.1122), ("Porreres", 39.5147, 3.0214), ("Montuïri", 39.5667, 2.9833), PALMA]),
+         puntos=[SALIDA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Sineu", 39.6428, 3.0114),
+                 ("Petra", 39.6136, 3.1122), ("Porreres", 39.5147, 3.0214), ("Montuïri", 39.5667, 2.9833), SALIDA]),
     dict(id="04", nombre="Levante: Porto Cristo, Portocolom y Santanyí", dificultad="Fácil", hora="09:00",
          desc="Recorrido largo pero sencillo por la costa este: calas, puertos pesqueros y carreteras rápidas.",
-         puntos=[PALMA, ("Manacor", 39.5700, 3.2094), ("Porto Cristo", 39.5406, 3.3308),
-                 ("Portocolom", 39.4167, 3.2583), ("Santanyí", 39.3542, 3.1283), ("Campos", 39.4306, 3.0194), PALMA]),
-    # ---------------- MEDIA ----------------
-    dict(id="05", nombre="Valldemossa, Deià y Sóller", dificultad="Media", hora="09:00",
-         desc="El tramo más famoso de la Ma-10 con curvas enlazadas y miradores al mar. Vuelta por el Coll de Sóller (carretera vieja, 58 curvas).",
-         puntos=[PALMA, ("Valldemossa", 39.7108, 2.6225), ("Deià", 39.7481, 2.6492), ("Sóller", 39.7667, 2.7150),
-                 ("Coll de Sóller", 39.7358, 2.6902), ("Bunyola", 39.6961, 2.6997), PALMA]),
-    dict(id="06", nombre="Galilea, Puigpunyent y Es Capdellà", dificultad="Media", hora="09:30",
-         desc="Carretera estrecha y muy revirada por el interior de la Serra, con pueblos de montaña y poco tráfico.",
-         puntos=[PALMA, ("Puigpunyent", 39.6247, 2.5264), ("Galilea", 39.6117, 2.4839),
-                 ("Es Capdellà", 39.5761, 2.4617), ("Calvià", 39.5658, 2.5047), PALMA]),
-    dict(id="07", nombre="Santuari de Cura (Puig de Randa)", dificultad="Media", hora="10:00",
-         desc="Subida corta y revirada al Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte final.",
-         puntos=[PALMA, ("Algaida", 39.5594, 2.8950), ("Randa", 39.5236, 2.9322),
-                 ("Santuari de Cura", 39.5217, 2.9203), ("Llucmajor", 39.4903, 2.8908), PALMA]),
-    dict(id="08", nombre="Serra de Llevant: Artà y Cala Ratjada", dificultad="Media", hora="09:00",
-         desc="Ruta larga hacia el nordeste: curvas de Artà a Capdepera, faro y puerto de Cala Ratjada, regreso por Son Servera.",
-         puntos=[PALMA, ("Manacor", 39.5700, 3.2094), ("Artà", 39.6936, 3.3494), ("Capdepera", 39.7022, 3.4336),
-                 ("Cala Ratjada", 39.7127, 3.4630), ("Son Servera", 39.6206, 3.3606),
-                 ("Sant Llorenç des Cardassar", 39.6106, 3.2839), PALMA]),
-    dict(id="09", nombre="Cap de Formentor", dificultad="Media", hora="08:30",
-         desc="Carretera espectacular hasta el faro. Salir temprano: tramo estrecho, ciclistas y mucho tráfico a partir de media mañana.",
-         puntos=[PALMA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Binissalem", 39.6872, 2.8439), ("Inca", 39.7211, 2.9111), ("Port de Pollença", 39.9075, 3.0842),
-                 ("Mirador Es Colomer", 39.9235, 3.1178), ("Faro de Formentor", 39.9619, 3.2123),
-                 ("Port de Pollença", 39.9075, 3.0842), ("Pollença", 39.8772, 3.0161),
-                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
-    # ---------------- DIFÍCIL ----------------
-    dict(id="10", nombre="Orient y Castell d'Alaró", dificultad="Difícil", hora="09:00",
-         desc="Carretera estrecha y bacheada por el valle de Orient, curvas cerradas sin visibilidad y bajada a Alaró. Muy técnica.",
-         puntos=[PALMA, ("Bunyola", 39.6961, 2.6997), ("Orient", 39.7294, 2.7408), ("Alaró", 39.7058, 2.7922),
-                 ("Lloseta", 39.7186, 2.8686), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
-    dict(id="11", nombre="Ma-10 completa: Andratx – Pollença", dificultad="Difícil", hora="08:00",
-         desc="La carretera de la Serra de Tramuntana entera: Estellencs, Banyalbufar, Deià, Sóller, Puig Major, Lluc y Pollença. Jornada completa, regreso por Inca.",
-         puntos=[PALMA, ("Andratx", 39.5756, 2.4206), ("Estellencs", 39.6536, 2.4800), ("Banyalbufar", 39.6878, 2.5147),
-                 ("Valldemossa", 39.7108, 2.6225), ("Deià", 39.7481, 2.6492), ("Sóller", 39.7667, 2.7150),
-                 ("Embalse de Cúber", 39.7880, 2.8000), ("Santuari de Lluc", 39.8217, 2.8847),
-                 ("Pollença", 39.8772, 3.0161), ("Inca", 39.7211, 2.9111),
-                 ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
-    dict(id="12", nombre="Sa Calobra y Nus de sa Corbata", dificultad="Difícil", hora="08:00",
-         desc="La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares.",
-         puntos=[PALMA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Binissalem", 39.6872, 2.8439), ("Inca", 39.7211, 2.9111), ("Selva", 39.7550, 2.9006), ("Santuari de Lluc", 39.8217, 2.8847),
-                 ("Coll dels Reis", 39.8298, 2.8425), ("Sa Calobra", 39.8510, 2.8063),
-                 ("Santuari de Lluc", 39.8217, 2.8847), ("Caimari", 39.7419, 2.8958),
-                 ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
-    dict(id="13", nombre="Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor", dificultad="Difícil", hora="07:30",
-         desc="La ruta reina para cerrar el año: Coll de Sóller, Puig Major, Sa Calobra y Formentor en un solo día. Solo para pilotos con experiencia.",
-         puntos=[PALMA, ("Coll de Sóller", 39.7358, 2.6902), ("Sóller", 39.7667, 2.7150), ("Fornalutx", 39.7822, 2.7408),
-                 ("Embalse de Cúber", 39.7880, 2.8000), ("Sa Calobra", 39.8510, 2.8063),
-                 ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
-                 ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
-                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
-    # ---------------- RUTAS DE FAROS (extra, fuera del calendario) ----------------
-    dict(id="14", nombre="Faros del Sur: Cap Blanc, Ses Salines y Portocolom", dificultad="Fácil", hora="09:00",
+         puntos=[SALIDA, ("Manacor", 39.5700, 3.2094), ("Porto Cristo", 39.5406, 3.3308),
+                 ("Portocolom", 39.4167, 3.2583), ("Santanyí", 39.3542, 3.1283), ("Campos", 39.4306, 3.0194), SALIDA]),
+    dict(id="05", nombre="Faros del Sur: Cap Blanc, Ses Salines y Portocolom", dificultad="Fácil", hora="09:00",
          desc="Tres faros de la costa sur y levante por carreteras llanas y anchas: Cap Blanc sobre los acantilados, "
               "Cap de ses Salines en el punto más al sur de la isla y el faro de Portocolom a la entrada del puerto. "
               "Vuelta por Felanitx y Porreres.",
-         puntos=[PALMA, ("Llucmajor", 39.4903, 2.8908), ("Faro de Cap Blanc", 39.3636, 2.7896),
+         puntos=[SALIDA, ("Llucmajor", 39.4903, 2.8908), ("Faro de Cap Blanc", 39.3636, 2.7896),
                  ("Ses Salines", 39.3378, 3.0536), ("Faro de Cap de ses Salines", 39.2650, 3.0536),
                  ("Santanyí", 39.3542, 3.1283), ("Faro de Portocolom", 39.4161, 3.2731),
-                 ("Felanitx", 39.4692, 3.1481), ("Porreres", 39.5147, 3.0214), ("Montuïri", 39.5667, 2.9833), PALMA]),
+                 ("Felanitx", 39.4692, 3.1481), ("Porreres", 39.5147, 3.0214), ("Montuïri", 39.5667, 2.9833), SALIDA]),
+    # ---------------- MEDIA ----------------
+    dict(id="06", nombre="Valldemossa, Deià y Sóller", dificultad="Media", hora="09:00",
+         desc="El tramo más famoso de la Ma-10 con curvas enlazadas y miradores al mar. Vuelta por el Coll de Sóller (carretera vieja, 58 curvas).",
+         puntos=[SALIDA, ("Valldemossa", 39.7108, 2.6225), ("Deià", 39.7481, 2.6492), ("Sóller", 39.7667, 2.7150),
+                 ("Coll de Sóller", 39.7358, 2.6902), ("Bunyola", 39.6961, 2.6997), SALIDA]),
+    dict(id="07", nombre="Galilea, Puigpunyent y Es Capdellà", dificultad="Media", hora="09:30",
+         desc="Carretera estrecha y muy revirada por el interior de la Serra, con pueblos de montaña y poco tráfico.",
+         puntos=[SALIDA, ("Puigpunyent", 39.6247, 2.5264), ("Galilea", 39.6117, 2.4839),
+                 ("Es Capdellà", 39.5761, 2.4617), ("Calvià", 39.5658, 2.5047), SALIDA]),
+    dict(id="08", nombre="Santuari de Cura (Puig de Randa)", dificultad="Media", hora="10:00",
+         desc="Subida corta y revirada al Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte final.",
+         puntos=[SALIDA, ("Algaida", 39.5594, 2.8950), ("Randa", 39.5236, 2.9322),
+                 ("Santuari de Cura", 39.5217, 2.9203), ("Llucmajor", 39.4903, 2.8908), SALIDA]),
+    dict(id="09", nombre="Serra de Llevant: Artà y Cala Ratjada", dificultad="Media", hora="09:00",
+         desc="Ruta larga hacia el nordeste: curvas de Artà a Capdepera, faro y puerto de Cala Ratjada, regreso por Son Servera.",
+         puntos=[SALIDA, ("Manacor", 39.5700, 3.2094), ("Artà", 39.6936, 3.3494), ("Capdepera", 39.7022, 3.4336),
+                 ("Cala Ratjada", 39.7127, 3.4630), ("Son Servera", 39.6206, 3.3606),
+                 ("Sant Llorenç des Cardassar", 39.6106, 3.2839), SALIDA]),
+    dict(id="10", nombre="Cap de Formentor", dificultad="Media", hora="08:30",
+         desc="Carretera espectacular hasta el faro. Salir temprano: tramo estrecho, ciclistas y mucho tráfico a partir de media mañana.",
+         puntos=[SALIDA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Binissalem", 39.6872, 2.8439), ("Inca", 39.7211, 2.9111), ("Port de Pollença", 39.9075, 3.0842),
+                 ("Mirador Es Colomer", 39.9235, 3.1178), ("Faro de Formentor", 39.9619, 3.2123),
+                 ("Port de Pollença", 39.9075, 3.0842), ("Pollença", 39.8772, 3.0161),
+                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
+    # ---------------- DIFÍCIL ----------------
+    dict(id="11", nombre="Orient y Castell d'Alaró", dificultad="Difícil", hora="09:00",
+         desc="Carretera estrecha y bacheada por el valle de Orient, curvas cerradas sin visibilidad y bajada a Alaró. Muy técnica.",
+         puntos=[SALIDA, ("Bunyola", 39.6961, 2.6997), ("Orient", 39.7294, 2.7408), ("Alaró", 39.7058, 2.7922),
+                 ("Lloseta", 39.7186, 2.8686), ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
+    dict(id="12", nombre="Ma-10 completa: Andratx – Pollença", dificultad="Difícil", hora="08:00",
+         desc="La carretera de la Serra de Tramuntana entera: Estellencs, Banyalbufar, Deià, Sóller, Puig Major, Lluc y Pollença. Jornada completa, regreso por Inca.",
+         puntos=[SALIDA, ("Andratx", 39.5756, 2.4206), ("Estellencs", 39.6536, 2.4800), ("Banyalbufar", 39.6878, 2.5147),
+                 ("Valldemossa", 39.7108, 2.6225), ("Deià", 39.7481, 2.6492), ("Sóller", 39.7667, 2.7150),
+                 ("Embalse de Cúber", 39.7880, 2.8000), ("Santuari de Lluc", 39.8217, 2.8847),
+                 ("Pollença", 39.8772, 3.0161), ("Inca", 39.7211, 2.9111),
+                 ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
+    dict(id="13", nombre="Sa Calobra y Nus de sa Corbata", dificultad="Difícil", hora="08:00",
+         desc="La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares.",
+         puntos=[SALIDA, ("Santa Maria del Camí", 39.6503, 2.7736), ("Binissalem", 39.6872, 2.8439), ("Inca", 39.7211, 2.9111), ("Selva", 39.7550, 2.9006), ("Santuari de Lluc", 39.8217, 2.8847),
+                 ("Coll dels Reis", 39.8298, 2.8425), ("Sa Calobra", 39.8510, 2.8063),
+                 ("Santuari de Lluc", 39.8217, 2.8847), ("Caimari", 39.7419, 2.8958),
+                 ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
+    dict(id="14", nombre="Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor", dificultad="Difícil", hora="07:30",
+         desc="La ruta reina para cerrar el año: Coll de Sóller, Puig Major, Sa Calobra y Formentor en un solo día. Solo para pilotos con experiencia.",
+         puntos=[SALIDA, ("Coll de Sóller", 39.7358, 2.6902), ("Sóller", 39.7667, 2.7150), ("Fornalutx", 39.7822, 2.7408),
+                 ("Embalse de Cúber", 39.7880, 2.8000), ("Sa Calobra", 39.8510, 2.8063),
+                 ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
+                 ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
+                 ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439), ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
     dict(id="15", nombre="Faros del Norte: Cap Gros y Formentor", dificultad="Difícil", hora="08:00",
          desc="Subida estrecha y empinada al faro de Cap Gros sobre el Port de Sóller, Ma-10 por el Puig Major y Lluc "
               "y final en el faro de Formentor. Coll de Sóller a la ida, carretera vieja por Inca a la vuelta. "
               "Jornada larga y muy revirada.",
-         puntos=[PALMA, ("Coll de Sóller", 39.7358, 2.6902), ("Sóller", 39.7667, 2.7150),
+         puntos=[SALIDA, ("Coll de Sóller", 39.7358, 2.6902), ("Sóller", 39.7667, 2.7150),
                  ("Port de Sóller", 39.7975, 2.6956), ("Faro de Cap Gros", 39.7969, 2.6847),
                  ("Sóller", 39.7667, 2.7150), ("Embalse de Cúber", 39.7880, 2.8000),
                  ("Santuari de Lluc", 39.8217, 2.8847), ("Pollença", 39.8772, 3.0161),
                  ("Faro de Formentor", 39.9619, 3.2123), ("Port de Pollença", 39.9075, 3.0842),
                  ("Inca", 39.7211, 2.9111), ("Binissalem", 39.6872, 2.8439),
-                 ("Santa Maria del Camí", 39.6503, 2.7736), PALMA]),
+                 ("Santa Maria del Camí", 39.6503, 2.7736), SALIDA]),
 ]
 
 # Orden del calendario: progresivo en dificultad, mezclando para no repetir zonas seguidas.
-ORDEN_CALENDARIO = ["01", "02", "05", "03", "06", "04", "07", "10", "08", "09", "12", "11", "13"]
+# Rutas numeradas por dificultad: 01-05 fáciles, 06-10 medias, 11-15 difíciles.
+# Calendario de domingos (ids de ruta en orden de fecha a partir de PRIMER_DOMINGO).
+ORDEN_CALENDARIO = ["01", "02", "06", "03", "07", "04", "08", "11", "09", "10", "13", "12", "14"]
 PRIMER_DOMINGO = date(2026, 10, 18)
 # Enlace de descarga directa de los GPX (funciona cuando el repositorio es público)
 DESCARGA_GPX = "https://raw.githubusercontent.com/rortizlotum-ops/top-gas/main/rutas/"
@@ -242,7 +243,7 @@ def ics(eventos):
                 f"DTSTART;TZID=Europe/Madrid:{inicio:%Y%m%dT%H%M%S}",
                 f"DTEND;TZID=Europe/Madrid:{fin:%Y%m%dT%H%M%S}",
                 f"SUMMARY:🏍️ [{ruta['dificultad']}] {ruta['nombre']}".replace(",", "\\,"),
-                f"LOCATION:{PALMA[0]}".replace(",", "\\,"), f"DESCRIPTION:{desc}", f"URL:{enlace}",
+                f"LOCATION:{SALIDA[0]}".replace(",", "\\,"), f"DESCRIPTION:{desc}", f"URL:{enlace}",
                 "END:VEVENT"]
     out.append("END:VCALENDAR")
     # plegado de líneas >75 octetos (RFC 5545)
@@ -261,6 +262,8 @@ def ics(eventos):
 
 def main():
     GPX_DIR.mkdir(exist_ok=True)
+    for viejo in GPX_DIR.glob("*.gpx"):
+        viejo.unlink()
     info = {}
     for ruta in RUTAS:
         print("Calculando", ruta["id"], ruta["nombre"])
@@ -279,10 +282,11 @@ def main():
         eventos.append((PRIMER_DOMINGO + timedelta(weeks=i), ruta, km, h, fichero))
     (ROOT / "calendario-domingos.ics").write_text(ics(eventos), encoding="utf-8", newline="")
 
-    # Resumen en JSON para el README
-    resumen = [dict(fecha=d.isoformat(), id=r["id"], nombre=r["nombre"], dificultad=r["dificultad"],
-                    km=round(km), horas_conduccion=round(h, 1), salida=r["hora"], gpx=f)
-               for d, r, km, h, f in eventos]
+    # Resumen en JSON (catálogo completo, con fecha si la ruta está en el calendario)
+    fechas = {r["id"]: d.isoformat() for d, r, *_ in eventos}
+    resumen = [dict(id=rid, nombre=r["nombre"], dificultad=r["dificultad"], km=round(km),
+                    horas_conduccion=round(h, 1), salida=r["hora"], gpx=f, fecha=fechas.get(rid))
+               for rid, (r, km, h, f) in sorted(info.items())]
     (ROOT / "rutas" / "resumen.json").write_text(json.dumps(resumen, ensure_ascii=False, indent=2) + "\n",
                                                  encoding="utf-8")
     for e in resumen:
