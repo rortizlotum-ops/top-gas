@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>08 · Santuari de Cura (Puig de Randa) (Media)</name><desc>Subida corta y revirada al Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte final. Dificultad: Media. Distancia aprox.: 73 km.</desc><keywords>moto, mallorca, media</keywords></metadata>
+  <metadata><name>16 · Santuari de Cura (Puig de Randa) (Media)</name><desc>Subida corta y revirada al Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte final. Dificultad: Media. Distancia aprox.: 73 km.</desc><keywords>moto, mallorca, media</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
   <wpt lat="39.559400" lon="2.895000"><name>Algaida</name></wpt>
   <wpt lat="39.523600" lon="2.932200"><name>Randa</name></wpt>
   <wpt lat="39.521700" lon="2.920300"><name>Santuari de Cura</name></wpt>
   <wpt lat="39.490300" lon="2.890800"><name>Llucmajor</name></wpt>
-  <trk><name>08 · Santuari de Cura (Puig de Randa) (Media)</name><desc>Subida corta y revirada al Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte final. Dificultad: Media. Distancia aprox.: 73 km.</desc><type>Moto</type><trkseg>
+  <trk><name>16 · Santuari de Cura (Puig de Randa) (Media)</name><desc>Subida corta y revirada al Puig de Randa con vistas a toda la isla. Carretera estrecha en la parte final. Dificultad: Media. Distancia aprox.: 73 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>

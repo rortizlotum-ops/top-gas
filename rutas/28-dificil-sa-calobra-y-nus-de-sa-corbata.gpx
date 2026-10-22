@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>13 · Sa Calobra y Nus de sa Corbata (Difícil)</name><desc>La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares. Dificultad: Difícil. Distancia aprox.: 128 km.</desc><keywords>moto, mallorca, difícil</keywords></metadata>
+  <metadata><name>28 · Sa Calobra y Nus de sa Corbata (Difícil)</name><desc>La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares. Dificultad: Difícil. Distancia aprox.: 128 km.</desc><keywords>moto, mallorca, difícil</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
   <wpt lat="39.650300" lon="2.773600"><name>Santa Maria del Camí</name></wpt>
   <wpt lat="39.687200" lon="2.843900"><name>Binissalem</name></wpt>
@@ -10,7 +10,7 @@
   <wpt lat="39.829800" lon="2.842500"><name>Coll dels Reis</name></wpt>
   <wpt lat="39.851000" lon="2.806300"><name>Sa Calobra</name></wpt>
   <wpt lat="39.741900" lon="2.895800"><name>Caimari</name></wpt>
-  <trk><name>13 · Sa Calobra y Nus de sa Corbata (Difícil)</name><desc>La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares. Dificultad: Difícil. Distancia aprox.: 128 km.</desc><type>Moto</type><trkseg>
+  <trk><name>28 · Sa Calobra y Nus de sa Corbata (Difícil)</name><desc>La carretera más famosa de la isla (Ma-2141): 12 km de horquillas y el Nus de sa Corbata. Ida y vuelta por el mismo sitio; evitar horas de autocares. Dificultad: Difícil. Distancia aprox.: 128 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>
@@ -652,66 +652,33 @@
     <trkpt lat="39.716473" lon="2.915395"/>
     <trkpt lat="39.716492" lon="2.915386"/>
     <trkpt lat="39.716531" lon="2.915353"/>
-    <trkpt lat="39.716590" lon="2.915340"/>
-    <trkpt lat="39.716613" lon="2.915344"/>
-    <trkpt lat="39.716628" lon="2.915346"/>
-    <trkpt lat="39.716704" lon="2.915367"/>
-    <trkpt lat="39.716834" lon="2.915446"/>
-    <trkpt lat="39.717208" lon="2.915676"/>
-    <trkpt lat="39.717328" lon="2.915750"/>
-    <trkpt lat="39.718366" lon="2.916410"/>
-    <trkpt lat="39.719086" lon="2.916845"/>
-    <trkpt lat="39.719211" lon="2.916921"/>
-    <trkpt lat="39.719802" lon="2.917279"/>
-    <trkpt lat="39.719905" lon="2.917380"/>
-    <trkpt lat="39.719951" lon="2.917454"/>
-    <trkpt lat="39.719952" lon="2.917492"/>
-    <trkpt lat="39.719958" lon="2.917529"/>
-    <trkpt lat="39.719969" lon="2.917564"/>
-    <trkpt lat="39.719991" lon="2.917607"/>
-    <trkpt lat="39.720021" lon="2.917641"/>
-    <trkpt lat="39.720057" lon="2.917665"/>
-    <trkpt lat="39.720092" lon="2.917677"/>
-    <trkpt lat="39.720129" lon="2.917677"/>
-    <trkpt lat="39.720164" lon="2.917668"/>
-    <trkpt lat="39.720191" lon="2.917653"/>
-    <trkpt lat="39.720215" lon="2.917632"/>
-    <trkpt lat="39.720241" lon="2.917598"/>
-    <trkpt lat="39.720260" lon="2.917557"/>
-    <trkpt lat="39.720272" lon="2.917512"/>
-    <trkpt lat="39.720276" lon="2.917464"/>
-    <trkpt lat="39.720271" lon="2.917417"/>
-    <trkpt lat="39.720262" lon="2.917383"/>
-    <trkpt lat="39.720282" lon="2.917324"/>
-    <trkpt lat="39.720330" lon="2.917180"/>
-    <trkpt lat="39.720339" lon="2.917155"/>
-    <trkpt lat="39.720509" lon="2.916704"/>
-    <trkpt lat="39.720559" lon="2.916568"/>
-    <trkpt lat="39.720618" lon="2.916407"/>
-    <trkpt lat="39.720855" lon="2.915765"/>
-    <trkpt lat="39.721082" lon="2.915150"/>
-    <trkpt lat="39.721128" lon="2.915030"/>
-    <trkpt lat="39.721391" lon="2.914291"/>
-    <trkpt lat="39.721439" lon="2.914177"/>
-    <trkpt lat="39.721458" lon="2.914133"/>
-    <trkpt lat="39.721478" lon="2.914108"/>
-    <trkpt lat="39.721524" lon="2.914069"/>
-    <trkpt lat="39.721551" lon="2.914046"/>
-    <trkpt lat="39.721866" lon="2.913790"/>
-    <trkpt lat="39.722252" lon="2.913474"/>
-    <trkpt lat="39.722284" lon="2.913448"/>
-    <trkpt lat="39.722305" lon="2.913409"/>
-    <trkpt lat="39.722312" lon="2.913358"/>
-    <trkpt lat="39.722304" lon="2.913308"/>
-    <trkpt lat="39.722099" lon="2.912856"/>
-    <trkpt lat="39.722063" lon="2.912779"/>
-    <trkpt lat="39.722002" lon="2.912649"/>
-    <trkpt lat="39.721925" lon="2.912449"/>
-    <trkpt lat="39.721836" lon="2.912220"/>
-    <trkpt lat="39.721761" lon="2.912001"/>
-    <trkpt lat="39.721588" lon="2.911561"/>
-    <trkpt lat="39.721575" lon="2.911209"/>
-    <trkpt lat="39.721569" lon="2.911067"/>
+    <trkpt lat="39.716558" lon="2.915310"/>
+    <trkpt lat="39.716575" lon="2.915258"/>
+    <trkpt lat="39.716580" lon="2.915202"/>
+    <trkpt lat="39.716578" lon="2.915171"/>
+    <trkpt lat="39.716571" lon="2.915142"/>
+    <trkpt lat="39.716563" lon="2.915118"/>
+    <trkpt lat="39.716553" lon="2.915095"/>
+    <trkpt lat="39.716561" lon="2.915045"/>
+    <trkpt lat="39.716579" lon="2.914987"/>
+    <trkpt lat="39.716608" lon="2.914926"/>
+    <trkpt lat="39.716639" lon="2.914855"/>
+    <trkpt lat="39.716815" lon="2.914400"/>
+    <trkpt lat="39.717284" lon="2.914691"/>
+    <trkpt lat="39.717541" lon="2.914007"/>
+    <trkpt lat="39.717996" lon="2.913429"/>
+    <trkpt lat="39.718389" lon="2.912908"/>
+    <trkpt lat="39.718615" lon="2.913393"/>
+    <trkpt lat="39.719018" lon="2.912807"/>
+    <trkpt lat="39.719317" lon="2.912284"/>
+    <trkpt lat="39.719562" lon="2.911821"/>
+    <trkpt lat="39.719923" lon="2.911246"/>
+    <trkpt lat="39.720035" lon="2.911051"/>
+    <trkpt lat="39.720337" lon="2.911355"/>
+    <trkpt lat="39.720555" lon="2.911219"/>
+    <trkpt lat="39.720671" lon="2.911317"/>
+    <trkpt lat="39.720712" lon="2.911331"/>
+    <trkpt lat="39.720832" lon="2.911443"/>
     <trkpt lat="39.720922" lon="2.911565"/>
     <trkpt lat="39.721218" lon="2.911984"/>
     <trkpt lat="39.721259" lon="2.912085"/>
