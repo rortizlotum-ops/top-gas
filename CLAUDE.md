@@ -16,7 +16,7 @@ Cada cambio se deja terminado de principio a fin, sin pedir confirmación:
 
 - Salida y llegada: Gasolinera BP del polígono de Marratxí.
 - Nunca por autovía ni autopista (Ma-1, Ma-13, Ma-19, Ma-20…).
-- Numeradas automáticamente por dificultad (fáciles, medias, difíciles).
+- Numeración propia en cada dificultad, desde el 1: fáciles (verde) 1, 2, 3…; medias (amarillo) 1, 2, 3…; difíciles (rojo) 1, 2, 3…. «La 3 roja» = Difícil 3. La asigna el generador automáticamente.
 - Series con nombre propio: "Vuelta a Mallorca…", "Ruta Faros N", "Ruta Puigs N".
 - Salida habitual a las 8:30 o 9:00 y vuelta a partir de las 15:00.
 - Tiempo de conducción calculado a 45 km/h de media.

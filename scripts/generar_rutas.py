@@ -372,11 +372,16 @@ RUTAS = [
                  P["Son Carrió"], P["Son Macià"], P["Felanitx"], P["Porreres"], P["Algaida"], SALIDA]),
 ]
 
-# Numeración por dificultad (fáciles, medias y difíciles), respetando el orden de la lista dentro de cada grupo.
-_ORDEN_DIFICULTAD = {"Fácil": 0, "Media": 1, "Difícil": 2}
-RUTAS.sort(key=lambda r: _ORDEN_DIFICULTAD[r["dificultad"]])
-for _i, _r in enumerate(RUTAS, 1):
-    _r["id"] = f"{_i:02d}"
+# Numeración propia en cada dificultad (fáciles 1, 2, 3…; medias 1, 2, 3…; difíciles 1, 2, 3…),
+# respetando el orden de la lista. Colores: verde = fácil, amarillo = media, rojo = difícil.
+# "num" es el número de la ruta dentro de su dificultad; "id" (p. ej. "dificil-03") la identifica de forma única.
+_PREFIJO = {"Fácil": "facil", "Media": "media", "Difícil": "dificil"}
+RUTAS.sort(key=lambda r: list(_PREFIJO).index(r["dificultad"]))
+_contador = {d: 0 for d in _PREFIJO}
+for _r in RUTAS:
+    _contador[_r["dificultad"]] += 1
+    _r["num"] = _contador[_r["dificultad"]]
+    _r["id"] = f"{_PREFIJO[_r['dificultad']]}-{_r['num']:02d}"
 
 VELOCIDAD_MEDIA_KMH = 45  # para estimar el tiempo de conducción sin paradas
 
@@ -455,7 +460,7 @@ def slug(texto):
 
 
 def gpx(ruta, coords, dist_km):
-    nombre = f"{ruta['id']} · {ruta['nombre']} ({ruta['dificultad']})"
+    nombre = f"{ruta['dificultad']} {ruta['num']} · {ruta['nombre']}"
     desc = f"{ruta['desc']} Dificultad: {ruta['dificultad']}. Distancia aprox.: {dist_km:.0f} km."
     lineas = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -489,16 +494,16 @@ def main():
         coords, dist, _, autovia = calcular_ruta(ruta["puntos"])
         if autovia:
             print("  AVISO, tramos en autovía:", autovia)
-        fichero = f"{ruta['id']}-{slug(ruta['dificultad'])}-{slug(ruta['nombre'])}.gpx"
+        fichero = f"{ruta['id']}-{slug(ruta['nombre'])}.gpx"
         (GPX_DIR / fichero).write_text(gpx(ruta, coords, dist / 1000), encoding="utf-8")
         # El tiempo del planificador es muy prudente; se usa una media fija de moto por secundarias.
         info[ruta["id"]] = (ruta, dist / 1000, dist / 1000 / VELOCIDAD_MEDIA_KMH, fichero)
         time.sleep(1)
 
     # Resumen en JSON (catálogo completo)
-    resumen = [dict(id=rid, nombre=r["nombre"], dificultad=r["dificultad"], km=round(km),
+    resumen = [dict(id=rid, num=r["num"], nombre=r["nombre"], dificultad=r["dificultad"], km=round(km),
                     horas_conduccion=round(h, 1), salida=r["hora"], gpx=f)
-               for rid, (r, km, h, f) in sorted(info.items())]
+               for rid, (r, km, h, f) in info.items()]
     (ROOT / "rutas" / "resumen.json").write_text(json.dumps(resumen, ensure_ascii=False, indent=2) + "\n",
                                                  encoding="utf-8")
     for e in resumen:
