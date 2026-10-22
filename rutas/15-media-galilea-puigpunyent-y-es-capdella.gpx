@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>07 · Galilea, Puigpunyent y Es Capdellà (Media)</name><desc>Carretera estrecha y muy revirada por el interior de la Serra, con pueblos de montaña y poco tráfico. Dificultad: Media. Distancia aprox.: 93 km.</desc><keywords>moto, mallorca, media</keywords></metadata>
+  <metadata><name>15 · Galilea, Puigpunyent y Es Capdellà (Media)</name><desc>Carretera estrecha y muy revirada por el interior de la Serra, con pueblos de montaña y poco tráfico. Dificultad: Media. Distancia aprox.: 93 km.</desc><keywords>moto, mallorca, media</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
   <wpt lat="39.624700" lon="2.526400"><name>Puigpunyent</name></wpt>
   <wpt lat="39.611700" lon="2.483900"><name>Galilea</name></wpt>
   <wpt lat="39.576100" lon="2.461700"><name>Es Capdellà</name></wpt>
   <wpt lat="39.565800" lon="2.504700"><name>Calvià</name></wpt>
-  <trk><name>07 · Galilea, Puigpunyent y Es Capdellà (Media)</name><desc>Carretera estrecha y muy revirada por el interior de la Serra, con pueblos de montaña y poco tráfico. Dificultad: Media. Distancia aprox.: 93 km.</desc><type>Moto</type><trkseg>
+  <trk><name>15 · Galilea, Puigpunyent y Es Capdellà (Media)</name><desc>Carretera estrecha y muy revirada por el interior de la Serra, con pueblos de montaña y poco tráfico. Dificultad: Media. Distancia aprox.: 93 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>

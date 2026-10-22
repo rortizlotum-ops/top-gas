@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>03 · Pla de Mallorca: Sineu, Petra y Porreres (Fácil)</name><desc>Carreteras interiores tranquilas entre pueblos del Pla, con poco tráfico el domingo por la mañana. Dificultad: Fácil. Distancia aprox.: 99 km.</desc><keywords>moto, mallorca, fácil</keywords></metadata>
+  <metadata><name>03 · Pla de Mallorca: Sineu, Petra y Porreres (Fácil)</name><desc>Carreteras interiores tranquilas entre pueblos del Pla, con poco tráfico el domingo por la mañana. Dificultad: Fácil. Distancia aprox.: 100 km.</desc><keywords>moto, mallorca, fácil</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
   <wpt lat="39.650300" lon="2.773600"><name>Santa Maria del Camí</name></wpt>
   <wpt lat="39.642800" lon="3.011400"><name>Sineu</name></wpt>
   <wpt lat="39.613600" lon="3.112200"><name>Petra</name></wpt>
   <wpt lat="39.514700" lon="3.021400"><name>Porreres</name></wpt>
   <wpt lat="39.566700" lon="2.983300"><name>Montuïri</name></wpt>
-  <trk><name>03 · Pla de Mallorca: Sineu, Petra y Porreres (Fácil)</name><desc>Carreteras interiores tranquilas entre pueblos del Pla, con poco tráfico el domingo por la mañana. Dificultad: Fácil. Distancia aprox.: 99 km.</desc><type>Moto</type><trkseg>
+  <trk><name>03 · Pla de Mallorca: Sineu, Petra y Porreres (Fácil)</name><desc>Carreteras interiores tranquilas entre pueblos del Pla, con poco tráfico el domingo por la mañana. Dificultad: Fácil. Distancia aprox.: 100 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>
@@ -593,23 +593,47 @@
     <trkpt lat="39.643938" lon="3.006905"/>
     <trkpt lat="39.644114" lon="3.007117"/>
     <trkpt lat="39.644444" lon="3.007507"/>
-    <trkpt lat="39.643972" lon="3.008179"/>
-    <trkpt lat="39.643549" lon="3.008799"/>
-    <trkpt lat="39.643197" lon="3.009211"/>
-    <trkpt lat="39.643160" lon="3.009120"/>
-    <trkpt lat="39.642774" lon="3.009636"/>
-    <trkpt lat="39.642802" lon="3.009694"/>
-    <trkpt lat="39.642667" lon="3.009918"/>
-    <trkpt lat="39.642596" lon="3.010034"/>
-    <trkpt lat="39.642505" lon="3.010175"/>
-    <trkpt lat="39.642491" lon="3.010196"/>
-    <trkpt lat="39.642341" lon="3.010397"/>
-    <trkpt lat="39.642425" lon="3.010482"/>
-    <trkpt lat="39.642445" lon="3.010508"/>
-    <trkpt lat="39.642477" lon="3.010591"/>
-    <trkpt lat="39.642590" lon="3.010915"/>
-    <trkpt lat="39.642677" lon="3.011166"/>
-    <trkpt lat="39.642813" lon="3.011386"/>
+    <trkpt lat="39.644833" lon="3.008008"/>
+    <trkpt lat="39.645313" lon="3.008668"/>
+    <trkpt lat="39.645940" lon="3.009487"/>
+    <trkpt lat="39.646087" lon="3.009686"/>
+    <trkpt lat="39.646488" lon="3.010268"/>
+    <trkpt lat="39.646729" lon="3.010613"/>
+    <trkpt lat="39.646880" lon="3.010836"/>
+    <trkpt lat="39.646930" lon="3.010935"/>
+    <trkpt lat="39.646970" lon="3.011053"/>
+    <trkpt lat="39.646986" lon="3.011171"/>
+    <trkpt lat="39.646980" lon="3.011292"/>
+    <trkpt lat="39.646967" lon="3.011406"/>
+    <trkpt lat="39.646942" lon="3.011491"/>
+    <trkpt lat="39.646867" lon="3.011652"/>
+    <trkpt lat="39.646665" lon="3.012086"/>
+    <trkpt lat="39.646550" lon="3.012300"/>
+    <trkpt lat="39.646419" lon="3.012530"/>
+    <trkpt lat="39.646298" lon="3.012722"/>
+    <trkpt lat="39.646194" lon="3.012874"/>
+    <trkpt lat="39.646088" lon="3.013013"/>
+    <trkpt lat="39.645946" lon="3.013177"/>
+    <trkpt lat="39.645791" lon="3.013340"/>
+    <trkpt lat="39.645576" lon="3.013529"/>
+    <trkpt lat="39.645563" lon="3.013500"/>
+    <trkpt lat="39.645535" lon="3.013439"/>
+    <trkpt lat="39.645505" lon="3.013372"/>
+    <trkpt lat="39.645483" lon="3.013323"/>
+    <trkpt lat="39.645356" lon="3.013208"/>
+    <trkpt lat="39.644312" lon="3.012523"/>
+    <trkpt lat="39.643967" lon="3.012292"/>
+    <trkpt lat="39.643904" lon="3.012273"/>
+    <trkpt lat="39.643231" lon="3.012066"/>
+    <trkpt lat="39.642945" lon="3.011979"/>
+    <trkpt lat="39.642980" lon="3.011889"/>
+    <trkpt lat="39.643019" lon="3.011790"/>
+    <trkpt lat="39.643110" lon="3.011723"/>
+    <trkpt lat="39.643287" lon="3.011709"/>
+    <trkpt lat="39.643283" lon="3.011624"/>
+    <trkpt lat="39.643223" lon="3.011461"/>
+    <trkpt lat="39.643132" lon="3.011303"/>
+    <trkpt lat="39.643132" lon="3.011303"/>
     <trkpt lat="39.642837" lon="3.011425"/>
     <trkpt lat="39.642706" lon="3.011625"/>
     <trkpt lat="39.642781" lon="3.011902"/>

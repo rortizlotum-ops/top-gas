@@ -5,7 +5,7 @@
     "dificultad": "Fácil",
     "km": 127,
     "horas_conduccion": 2.8,
-    "salida": "09:30",
+    "salida": "09:00",
     "gpx": "01-facil-costa-de-poniente-andratx-y-sant-elm.gpx"
   },
   {
@@ -14,16 +14,16 @@
     "dificultad": "Fácil",
     "km": 165,
     "horas_conduccion": 3.7,
-    "salida": "09:30",
+    "salida": "09:00",
     "gpx": "02-facil-migjorn-cap-blanc-y-colonia-de-sant-jordi.gpx"
   },
   {
     "id": "03",
     "nombre": "Pla de Mallorca: Sineu, Petra y Porreres",
     "dificultad": "Fácil",
-    "km": 99,
+    "km": 100,
     "horas_conduccion": 2.2,
-    "salida": "09:30",
+    "salida": "09:00",
     "gpx": "03-facil-pla-de-mallorca-sineu-petra-y-porreres.gpx"
   },
   {
@@ -46,92 +46,299 @@
   },
   {
     "id": "06",
+    "nombre": "Media Vuelta Sur: del Migjorn a Llevant",
+    "dificultad": "Fácil",
+    "km": 257,
+    "horas_conduccion": 5.7,
+    "salida": "09:00",
+    "gpx": "06-facil-media-vuelta-sur-del-migjorn-a-llevant.gpx"
+  },
+  {
+    "id": "07",
+    "nombre": "Ruta Faros 4 · Llevant: Capdepera, Porto Cristo y Portocolom",
+    "dificultad": "Fácil",
+    "km": 209,
+    "horas_conduccion": 4.7,
+    "salida": "09:00",
+    "gpx": "07-facil-ruta-faros-4-llevant-capdepera-porto-cristo-y-portocolom.gpx"
+  },
+  {
+    "id": "08",
+    "nombre": "Calas del Sur: Cala Pi, Llombards, Cala Figuera y Cala d'Or",
+    "dificultad": "Fácil",
+    "km": 192,
+    "horas_conduccion": 4.3,
+    "salida": "09:00",
+    "gpx": "08-facil-calas-del-sur-cala-pi-llombards-cala-figuera-y-cala-d-or.gpx"
+  },
+  {
+    "id": "09",
+    "nombre": "Pla de Mallorca completo: pueblos del interior",
+    "dificultad": "Fácil",
+    "km": 115,
+    "horas_conduccion": 2.6,
+    "salida": "09:00",
+    "gpx": "09-facil-pla-de-mallorca-completo-pueblos-del-interior.gpx"
+  },
+  {
+    "id": "10",
+    "nombre": "Ruta del Vino: Binissalem, Pla y Felanitx",
+    "dificultad": "Fácil",
+    "km": 122,
+    "horas_conduccion": 2.7,
+    "salida": "09:00",
+    "gpx": "10-facil-ruta-del-vino-binissalem-pla-y-felanitx.gpx"
+  },
+  {
+    "id": "11",
+    "nombre": "Costa Norte: Alcúdia, Son Serra y Colònia de Sant Pere",
+    "dificultad": "Fácil",
+    "km": 182,
+    "horas_conduccion": 4.0,
+    "salida": "09:00",
+    "gpx": "11-facil-costa-norte-alcudia-son-serra-y-colonia-de-sant-pere.gpx"
+  },
+  {
+    "id": "12",
+    "nombre": "Gran Ruta de Llevant: Cales de Mallorca, Canyamel y Cala Ratjada",
+    "dificultad": "Fácil",
+    "km": 207,
+    "horas_conduccion": 4.6,
+    "salida": "09:00",
+    "gpx": "12-facil-gran-ruta-de-llevant-cales-de-mallorca-canyamel-y-cala-ratjada.gpx"
+  },
+  {
+    "id": "13",
+    "nombre": "Interior de Llevant: Vilafranca, Sant Llorenç y Son Macià",
+    "dificultad": "Fácil",
+    "km": 153,
+    "horas_conduccion": 3.4,
+    "salida": "09:00",
+    "gpx": "13-facil-interior-de-llevant-vilafranca-sant-llorenc-y-son-macia.gpx"
+  },
+  {
+    "id": "14",
     "nombre": "Valldemossa, Deià y Sóller",
     "dificultad": "Media",
     "km": 69,
     "horas_conduccion": 1.5,
     "salida": "09:00",
-    "gpx": "06-media-valldemossa-deia-y-soller.gpx"
+    "gpx": "14-media-valldemossa-deia-y-soller.gpx"
   },
   {
-    "id": "07",
+    "id": "15",
     "nombre": "Galilea, Puigpunyent y Es Capdellà",
     "dificultad": "Media",
     "km": 93,
     "horas_conduccion": 2.1,
-    "salida": "09:30",
-    "gpx": "07-media-galilea-puigpunyent-y-es-capdella.gpx"
+    "salida": "09:00",
+    "gpx": "15-media-galilea-puigpunyent-y-es-capdella.gpx"
   },
   {
-    "id": "08",
+    "id": "16",
     "nombre": "Santuari de Cura (Puig de Randa)",
     "dificultad": "Media",
     "km": 73,
     "horas_conduccion": 1.6,
-    "salida": "10:00",
-    "gpx": "08-media-santuari-de-cura-puig-de-randa.gpx"
+    "salida": "09:00",
+    "gpx": "16-media-santuari-de-cura-puig-de-randa.gpx"
   },
   {
-    "id": "09",
+    "id": "17",
     "nombre": "Serra de Llevant: Artà y Cala Ratjada",
     "dificultad": "Media",
-    "km": 170,
+    "km": 171,
     "horas_conduccion": 3.8,
     "salida": "09:00",
-    "gpx": "09-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
+    "gpx": "17-media-serra-de-llevant-arta-y-cala-ratjada.gpx"
   },
   {
-    "id": "10",
+    "id": "18",
     "nombre": "Cap de Formentor",
     "dificultad": "Media",
-    "km": 156,
+    "km": 155,
     "horas_conduccion": 3.5,
     "salida": "08:30",
-    "gpx": "10-media-cap-de-formentor.gpx"
+    "gpx": "18-media-cap-de-formentor.gpx"
   },
   {
-    "id": "11",
+    "id": "19",
+    "nombre": "Ruta Faros 5 · Bahías del Norte: Formentor, Alcanada y Capdepera",
+    "dificultad": "Media",
+    "km": 251,
+    "horas_conduccion": 5.6,
+    "salida": "08:30",
+    "gpx": "19-media-ruta-faros-5-bahias-del-norte-formentor-alcanada-y-capdepera.gpx"
+  },
+  {
+    "id": "20",
+    "nombre": "Ruta Puigs 1 · Pla: Sant Miquel, Cura, Monti-sion, Sant Salvador, Consolació y Bonany",
+    "dificultad": "Media",
+    "km": 194,
+    "horas_conduccion": 4.3,
+    "salida": "09:00",
+    "gpx": "20-media-ruta-puigs-1-pla-sant-miquel-cura-monti-sion-sant-salvador-consolacio-y-bonany.gpx"
+  },
+  {
+    "id": "21",
+    "nombre": "Ruta Puigs 3 · Llevant: Bonany, Sant Salvador d'Artà, Betlem y Castell de Capdepera",
+    "dificultad": "Media",
+    "km": 196,
+    "horas_conduccion": 4.4,
+    "salida": "09:00",
+    "gpx": "21-media-ruta-puigs-3-llevant-bonany-sant-salvador-d-arta-betlem-y-castell-de-capdepera.gpx"
+  },
+  {
+    "id": "22",
+    "nombre": "Ruta de los Castillos: Bellver, Santueri y Capdepera",
+    "dificultad": "Media",
+    "km": 228,
+    "horas_conduccion": 5.1,
+    "salida": "09:00",
+    "gpx": "22-media-ruta-de-los-castillos-bellver-santueri-y-capdepera.gpx"
+  },
+  {
+    "id": "23",
+    "nombre": "Raiguer completo: de Alaró a sa Pobla",
+    "dificultad": "Media",
+    "km": 96,
+    "horas_conduccion": 2.1,
+    "salida": "09:00",
+    "gpx": "23-media-raiguer-completo-de-alaro-a-sa-pobla.gpx"
+  },
+  {
+    "id": "24",
+    "nombre": "Tramuntana Sur: Galilea, Andratx, Estellencs y Esporles",
+    "dificultad": "Media",
+    "km": 113,
+    "horas_conduccion": 2.5,
+    "salida": "09:00",
+    "gpx": "24-media-tramuntana-sur-galilea-andratx-estellencs-y-esporles.gpx"
+  },
+  {
+    "id": "25",
+    "nombre": "Valle de Sóller: Port de Sóller, Fornalutx, Deià y Valldemossa",
+    "dificultad": "Media",
+    "km": 103,
+    "horas_conduccion": 2.3,
+    "salida": "09:00",
+    "gpx": "25-media-valle-de-soller-port-de-soller-fornalutx-deia-y-valldemossa.gpx"
+  },
+  {
+    "id": "26",
     "nombre": "Orient y Castell d'Alaró",
     "dificultad": "Difícil",
     "km": 60,
     "horas_conduccion": 1.3,
     "salida": "09:00",
-    "gpx": "11-dificil-orient-y-castell-d-alaro.gpx"
+    "gpx": "26-dificil-orient-y-castell-d-alaro.gpx"
   },
   {
-    "id": "12",
+    "id": "27",
     "nombre": "Ma-10 completa: Andratx – Pollença",
     "dificultad": "Difícil",
-    "km": 217,
+    "km": 218,
     "horas_conduccion": 4.8,
-    "salida": "08:00",
-    "gpx": "12-dificil-ma-10-completa-andratx-pollenca.gpx"
+    "salida": "08:30",
+    "gpx": "27-dificil-ma-10-completa-andratx-pollenca.gpx"
   },
   {
-    "id": "13",
+    "id": "28",
     "nombre": "Sa Calobra y Nus de sa Corbata",
     "dificultad": "Difícil",
     "km": 128,
-    "horas_conduccion": 2.9,
-    "salida": "08:00",
-    "gpx": "13-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
+    "horas_conduccion": 2.8,
+    "salida": "08:30",
+    "gpx": "28-dificil-sa-calobra-y-nus-de-sa-corbata.gpx"
   },
   {
-    "id": "14",
+    "id": "29",
     "nombre": "Gran Vuelta Tramuntana: Sóller, Sa Calobra y Formentor",
     "dificultad": "Difícil",
-    "km": 214,
+    "km": 215,
     "horas_conduccion": 4.8,
-    "salida": "07:30",
-    "gpx": "14-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx"
+    "salida": "08:30",
+    "gpx": "29-dificil-gran-vuelta-tramuntana-soller-sa-calobra-y-formentor.gpx"
   },
   {
-    "id": "15",
+    "id": "30",
     "nombre": "Ruta Faros 2 · Norte: Cap Gros y Formentor",
     "dificultad": "Difícil",
     "km": 204,
     "horas_conduccion": 4.5,
+    "salida": "08:30",
+    "gpx": "30-dificil-ruta-faros-2-norte-cap-gros-y-formentor.gpx"
+  },
+  {
+    "id": "31",
+    "nombre": "Vuelta a Mallorca por la costa",
+    "dificultad": "Difícil",
+    "km": 383,
+    "horas_conduccion": 8.5,
     "salida": "08:00",
-    "gpx": "15-dificil-ruta-faros-2-norte-cap-gros-y-formentor.gpx"
+    "gpx": "31-dificil-vuelta-a-mallorca-por-la-costa.gpx"
+  },
+  {
+    "id": "32",
+    "nombre": "Vuelta a Mallorca por todos los faros",
+    "dificultad": "Difícil",
+    "km": 512,
+    "horas_conduccion": 11.4,
+    "salida": "08:00",
+    "gpx": "32-dificil-vuelta-a-mallorca-por-todos-los-faros.gpx"
+  },
+  {
+    "id": "33",
+    "nombre": "Media Vuelta Norte: de Andratx a Artà",
+    "dificultad": "Difícil",
+    "km": 294,
+    "horas_conduccion": 6.5,
+    "salida": "08:30",
+    "gpx": "33-dificil-media-vuelta-norte-de-andratx-a-arta.gpx"
+  },
+  {
+    "id": "34",
+    "nombre": "Ruta Faros 3 · Poniente: Sa Mola y Cap Gros",
+    "dificultad": "Difícil",
+    "km": 181,
+    "horas_conduccion": 4.0,
+    "salida": "08:30",
+    "gpx": "34-dificil-ruta-faros-3-poniente-sa-mola-y-cap-gros.gpx"
+  },
+  {
+    "id": "35",
+    "nombre": "Ruta Puigs 2 · Raiguer y Norte: Santa Magdalena, La Victòria, Lluc y Castell d'Alaró",
+    "dificultad": "Difícil",
+    "km": 156,
+    "horas_conduccion": 3.5,
+    "salida": "08:30",
+    "gpx": "35-dificil-ruta-puigs-2-raiguer-y-norte-santa-magdalena-la-victoria-lluc-y-castell-d-alaro.gpx"
+  },
+  {
+    "id": "36",
+    "nombre": "Ruta Puigs 4 · Gran Ruta de los Puigs",
+    "dificultad": "Difícil",
+    "km": 238,
+    "horas_conduccion": 5.3,
+    "salida": "08:30",
+    "gpx": "36-dificil-ruta-puigs-4-gran-ruta-de-los-puigs.gpx"
+  },
+  {
+    "id": "37",
+    "nombre": "Ruta Puigs 5 · Ponent y Tramuntana: Na Burguesa, sa Gramola, Trinitat y Ses Barques",
+    "dificultad": "Difícil",
+    "km": 160,
+    "horas_conduccion": 3.6,
+    "salida": "08:30",
+    "gpx": "37-dificil-ruta-puigs-5-ponent-y-tramuntana-na-burguesa-sa-gramola-trinitat-y-ses-barques.gpx"
+  },
+  {
+    "id": "38",
+    "nombre": "Miradores de la Ma-10: de sa Gramola a Ses Barques",
+    "dificultad": "Difícil",
+    "km": 188,
+    "horas_conduccion": 4.2,
+    "salida": "08:30",
+    "gpx": "38-dificil-miradores-de-la-ma-10-de-sa-gramola-a-ses-barques.gpx"
   }
 ]
