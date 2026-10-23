@@ -1,0 +1,44 @@
+# Publica los GPX como archivos descargables en la release "gpx".
+# Los enlaces https://github.com/rortizlotum-ops/top-gas/releases/download/gpx/<fichero>.gpx
+# descargan el archivo .gpx directamente (no una página web), listo para subir a Wikiloc.
+name: Publicar GPX
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "rutas/**"
+      - ".github/workflows/publicar-gpx.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-gpx
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Subir los GPX a la release "gpx"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if ! gh release view gpx >/dev/null 2>&1; then
+            gh release create gpx --target "$GITHUB_SHA" \
+              --title "Rutas GPX para Wikiloc" \
+              --notes "Archivos GPX de todas las rutas, para descargar y subir a Wikiloc. Se actualizan automáticamente con cada cambio en main."
+          fi
+          # Quitar los GPX que ya no existen (rutas renombradas o eliminadas)
+          gh release view gpx --json assets --jq '.assets[].name' | while read -r nombre; do
+            if [ -n "$nombre" ] && [ ! -f "rutas/$nombre" ]; then
+              gh release delete-asset gpx "$nombre" -y
+            fi
+          done
+          gh release upload gpx rutas/*.gpx --clobber
