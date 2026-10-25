@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>Difícil 11 · Ruta Puigs 4 · Gran Ruta de los Puigs</name><desc>Siete subidas en un día: Cura, Monti-sion, Sant Salvador de Felanitx, Castell de Santueri, Bonany, Sant Salvador d'Artà y Santa Magdalena. Muchas horquillas estrechas y jornada larga. Dificultad: Difícil. Distancia aprox.: 238 km.</desc><keywords>moto, mallorca, difícil</keywords></metadata>
+  <metadata><name>Difícil 11 · Ruta Puigs 4 · Gran Ruta de los Puigs</name><desc>Siete subidas en un día: Cura, Monti-sion, Sant Salvador de Felanitx, Castell de Santueri, Bonany, Sant Salvador d'Artà y Santa Magdalena. Muchas horquillas estrechas y jornada larga. Dificultad: Difícil. Distancia aprox.: 236 km.</desc><keywords>moto, mallorca, difícil</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
   <wpt lat="39.527600" lon="2.926000"><name>Santuari de Cura</name></wpt>
   <wpt lat="39.496100" lon="3.016300"><name>Santuari de Monti-sion</name></wpt>
@@ -8,11 +8,8 @@
   <wpt lat="39.432000" lon="3.187800"><name>Castell de Santueri</name></wpt>
   <wpt lat="39.594500" lon="3.087300"><name>Ermita de Bonany</name></wpt>
   <wpt lat="39.696400" lon="3.353600"><name>Santuari de Sant Salvador (Artà)</name></wpt>
-  <wpt lat="39.703400" lon="3.102700"><name>Santa Margalida</name></wpt>
   <wpt lat="39.721100" lon="2.956900"><name>Puig de Santa Magdalena</name></wpt>
-  <wpt lat="39.687200" lon="2.843900"><name>Binissalem</name></wpt>
-  <wpt lat="39.650300" lon="2.773600"><name>Santa Maria del Camí</name></wpt>
-  <trk><name>Difícil 11 · Ruta Puigs 4 · Gran Ruta de los Puigs</name><desc>Siete subidas en un día: Cura, Monti-sion, Sant Salvador de Felanitx, Castell de Santueri, Bonany, Sant Salvador d'Artà y Santa Magdalena. Muchas horquillas estrechas y jornada larga. Dificultad: Difícil. Distancia aprox.: 238 km.</desc><type>Moto</type><trkseg>
+  <trk><name>Difícil 11 · Ruta Puigs 4 · Gran Ruta de los Puigs</name><desc>Siete subidas en un día: Cura, Monti-sion, Sant Salvador de Felanitx, Castell de Santueri, Bonany, Sant Salvador d'Artà y Santa Magdalena. Muchas horquillas estrechas y jornada larga. Dificultad: Difícil. Distancia aprox.: 236 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>
@@ -4264,18 +4261,11 @@
     <trkpt lat="39.608995" lon="3.112097"/>
     <trkpt lat="39.609051" lon="3.112157"/>
     <trkpt lat="39.609083" lon="3.112184"/>
-    <trkpt lat="39.609103" lon="3.112188"/>
-    <trkpt lat="39.609238" lon="3.112312"/>
-    <trkpt lat="39.609465" lon="3.112441"/>
-    <trkpt lat="39.609847" lon="3.112640"/>
-    <trkpt lat="39.609909" lon="3.112645"/>
-    <trkpt lat="39.609968" lon="3.112636"/>
-    <trkpt lat="39.610291" lon="3.113340"/>
-    <trkpt lat="39.610528" lon="3.113855"/>
-    <trkpt lat="39.610731" lon="3.114300"/>
-    <trkpt lat="39.610846" lon="3.114558"/>
-    <trkpt lat="39.610680" lon="3.114681"/>
-    <trkpt lat="39.610320" lon="3.114957"/>
+    <trkpt lat="39.609153" lon="3.112502"/>
+    <trkpt lat="39.609261" lon="3.113029"/>
+    <trkpt lat="39.609561" lon="3.113926"/>
+    <trkpt lat="39.609763" lon="3.114482"/>
+    <trkpt lat="39.609907" lon="3.114933"/>
     <trkpt lat="39.610011" lon="3.115259"/>
     <trkpt lat="39.609878" lon="3.115429"/>
     <trkpt lat="39.609211" lon="3.116369"/>
@@ -5305,8 +5295,8 @@
     <trkpt lat="39.703256" lon="3.225093"/>
     <trkpt lat="39.703290" lon="3.225031"/>
     <trkpt lat="39.703303" lon="3.225011"/>
-    <trkpt lat="39.703360" lon="3.224924"/>
-    <trkpt lat="39.703418" lon="3.224868"/>
+    <trkpt lat="39.703363" lon="3.224935"/>
+    <trkpt lat="39.703402" lon="3.224891"/>
     <trkpt lat="39.703523" lon="3.224788"/>
     <trkpt lat="39.703613" lon="3.224736"/>
     <trkpt lat="39.703696" lon="3.224703"/>
@@ -6417,54 +6407,6 @@
     <trkpt lat="39.684899" lon="2.848401"/>
     <trkpt lat="39.684468" lon="2.847581"/>
     <trkpt lat="39.684430" lon="2.847502"/>
-    <trkpt lat="39.685102" lon="2.846780"/>
-    <trkpt lat="39.685162" lon="2.846716"/>
-    <trkpt lat="39.685860" lon="2.845980"/>
-    <trkpt lat="39.685996" lon="2.845836"/>
-    <trkpt lat="39.686639" lon="2.845006"/>
-    <trkpt lat="39.686690" lon="2.844941"/>
-    <trkpt lat="39.686746" lon="2.844853"/>
-    <trkpt lat="39.686782" lon="2.844796"/>
-    <trkpt lat="39.686878" lon="2.844635"/>
-    <trkpt lat="39.686872" lon="2.844547"/>
-    <trkpt lat="39.686849" lon="2.844206"/>
-    <trkpt lat="39.686880" lon="2.843570"/>
-    <trkpt lat="39.686933" lon="2.843361"/>
-    <trkpt lat="39.686994" lon="2.843416"/>
-    <trkpt lat="39.687086" lon="2.843411"/>
-    <trkpt lat="39.687201" lon="2.843560"/>
-    <trkpt lat="39.687305" lon="2.843627"/>
-    <trkpt lat="39.687423" lon="2.843704"/>
-    <trkpt lat="39.687513" lon="2.843760"/>
-    <trkpt lat="39.687631" lon="2.843833"/>
-    <trkpt lat="39.687791" lon="2.843654"/>
-    <trkpt lat="39.687807" lon="2.843685"/>
-    <trkpt lat="39.687962" lon="2.843931"/>
-    <trkpt lat="39.687975" lon="2.844016"/>
-    <trkpt lat="39.688034" lon="2.844123"/>
-    <trkpt lat="39.688202" lon="2.844427"/>
-    <trkpt lat="39.687891" lon="2.844801"/>
-    <trkpt lat="39.687752" lon="2.844968"/>
-    <trkpt lat="39.687591" lon="2.845149"/>
-    <trkpt lat="39.687380" lon="2.845308"/>
-    <trkpt lat="39.687665" lon="2.845882"/>
-    <trkpt lat="39.687731" lon="2.846016"/>
-    <trkpt lat="39.687768" lon="2.846083"/>
-    <trkpt lat="39.687871" lon="2.846272"/>
-    <trkpt lat="39.688098" lon="2.846690"/>
-    <trkpt lat="39.688145" lon="2.846776"/>
-    <trkpt lat="39.687730" lon="2.847094"/>
-    <trkpt lat="39.687211" lon="2.847488"/>
-    <trkpt lat="39.686705" lon="2.847824"/>
-    <trkpt lat="39.686618" lon="2.847882"/>
-    <trkpt lat="39.686532" lon="2.848291"/>
-    <trkpt lat="39.686340" lon="2.849166"/>
-    <trkpt lat="39.686050" lon="2.850352"/>
-    <trkpt lat="39.685966" lon="2.850434"/>
-    <trkpt lat="39.685218" lon="2.849008"/>
-    <trkpt lat="39.684899" lon="2.848401"/>
-    <trkpt lat="39.684468" lon="2.847581"/>
-    <trkpt lat="39.684430" lon="2.847502"/>
     <trkpt lat="39.684352" lon="2.847340"/>
     <trkpt lat="39.684166" lon="2.846823"/>
     <trkpt lat="39.683966" lon="2.846268"/>
@@ -6657,23 +6599,9 @@
     <trkpt lat="39.651252" lon="2.773229"/>
     <trkpt lat="39.651230" lon="2.773204"/>
     <trkpt lat="39.651177" lon="2.773140"/>
-    <trkpt lat="39.651126" lon="2.773149"/>
-    <trkpt lat="39.651075" lon="2.773226"/>
-    <trkpt lat="39.650842" lon="2.773617"/>
-    <trkpt lat="39.650343" lon="2.774398"/>
-    <trkpt lat="39.650319" lon="2.774354"/>
-    <trkpt lat="39.650091" lon="2.773946"/>
-    <trkpt lat="39.650057" lon="2.773887"/>
-    <trkpt lat="39.650032" lon="2.773842"/>
-    <trkpt lat="39.649990" lon="2.773763"/>
-    <trkpt lat="39.650027" lon="2.773729"/>
-    <trkpt lat="39.650200" lon="2.773563"/>
-    <trkpt lat="39.650231" lon="2.773518"/>
-    <trkpt lat="39.650257" lon="2.773482"/>
-    <trkpt lat="39.650495" lon="2.773099"/>
-    <trkpt lat="39.650531" lon="2.773082"/>
-    <trkpt lat="39.650816" lon="2.772866"/>
-    <trkpt lat="39.650835" lon="2.772852"/>
+    <trkpt lat="39.651142" lon="2.773098"/>
+    <trkpt lat="39.651039" lon="2.772992"/>
+    <trkpt lat="39.651016" lon="2.772995"/>
     <trkpt lat="39.650884" lon="2.772828"/>
     <trkpt lat="39.650818" lon="2.772709"/>
     <trkpt lat="39.650724" lon="2.772508"/>
