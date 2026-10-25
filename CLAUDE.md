@@ -7,7 +7,7 @@ Rutas en moto por Mallorca (GPX para Wikiloc). El catálogo se genera con `pytho
 Cada cambio se deja terminado de principio a fin, sin pedir confirmación:
 
 1. Hacer el cambio y regenerar las rutas si hace falta.
-2. Comprobar: los GPX son XML válido y el generador no avisa de tramos en autovía.
+2. Comprobar: los GPX son XML válido y el generador no avisa de tramos en autovía ni de tramos repetidos (si avisa, rediseñar la ruta).
 3. Commit y push a la rama de trabajo.
 4. **Crear el pull request contra `main` y hacer el merge automáticamente.**
 5. Esperar a que la automatización `Publicar GPX` (GitHub Actions) suba los GPX a la release `gpx`, y comprobar que los enlaces de descarga responden.
@@ -17,6 +17,8 @@ Cada cambio se deja terminado de principio a fin, sin pedir confirmación:
 
 - Salida y llegada: Gasolinera BP del polígono de Marratxí.
 - Nunca por autovía ni autopista (Ma-1, Ma-13, Ma-19, Ma-20…).
+- Los pueblos son puntos de paso: se cruzan o bordean por lo más directo, sin entrar al centro y volver a salir por el mismo sitio, salvo que se pida expresamente parar en uno. Solo las paradas (faros, santuarios, miradores, calas…) se visitan.
+- La vuelta va por un camino distinto a la ida. Solo se aceptan coincidencias a menos de 8 km de la gasolinera y las idas y vueltas a una parada en fondo de saco. El generador avisa de cualquier otro tramo repetido.
 - Numeración propia en cada dificultad, desde el 1: fáciles (verde) 1, 2, 3…; medias (amarillo) 1, 2, 3…; difíciles (rojo) 1, 2, 3…. «La 3 roja» = Difícil 3. La asigna el generador automáticamente.
 - Series con nombre propio: "Vuelta a Mallorca…", "Ruta Faros N", "Ruta Puigs N".
 - Salida habitual a las 8:30 o 9:00 y vuelta a partir de las 15:00.
