@@ -37,10 +37,11 @@ Cuando el propietario diga qué ruta van a hacer y qué día (p. ej. «la 3 roja
 2. Buscar además en internet las fiestas, ferias, mercadillos medievales, carreras o pruebas deportivas
    de ese fin de semana en los pueblos por los que pasa la ruta (agenda de mallorca.com, webs de los
    ayuntamientos, thecalendarmallorca.com), porque suelen cortar la travesía principal del pueblo.
-3. Responder con un resumen claro: cortes (⛔), avisos (⚠️) y qué hacer (salir antes, otra ruta o un
-   desvío). Si hay un corte de verdad en el recorrido, proponer la ruta alternativa más parecida.
-4. Si un corte es largo (semanas o meses), regenerar las rutas: el generador evita automáticamente
-   los cortes activos del Consell.
+3. Responder con un resumen claro: cortes (⛔), avisos (⚠️) e información (ℹ️), indicando en qué punto
+   de la ruta está cada uno. Se puede sugerir un desvío o una ruta alternativa, pero **la decisión es
+   del propietario**.
+4. **No modificar ni regenerar las rutas por las incidencias** (ni siquiera por cortes largos): las rutas
+   se mantienen tal cual; la comprobación solo informa.
 
 Mantenimiento de datos: cuando se publique el calendario laboral de 2027 en
 https://www.caib.es/sites/calendarilaboral/, añadir `datos/festes_locals_2027.json` y actualizar las ferias.
