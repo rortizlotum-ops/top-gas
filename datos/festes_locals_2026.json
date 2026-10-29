@@ -1,0 +1,816 @@
+{
+ "fuente": "Calendari laboral general i local de les Illes Balears 2026 (CAIB): https://www.caib.es/sites/calendarilaboral/ca/any_2026/",
+ "nota": "Dos festes locals por localidad. Las fiestas patronales suelen durar varios días alrededor de estas fechas, con calles cortadas.",
+ "festes": {
+  "Alaró": [
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   },
+   {
+    "fecha": "2026-06-29",
+    "motivo": "Sant Pere"
+   }
+  ],
+  "Alcúdia": [
+   {
+    "fecha": "2026-06-29",
+    "motivo": "Sant Pere"
+   },
+   {
+    "fecha": "2026-07-02",
+    "motivo": "Mare de Déu de la Victòria"
+   }
+  ],
+  "Algaida i Randa": [
+   {
+    "fecha": "2026-01-16",
+    "motivo": "Sant Honorat"
+   },
+   {
+    "fecha": "2026-07-25",
+    "motivo": "Sant Jaume"
+   }
+  ],
+  "Pina": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-09-26",
+    "motivo": "Sant Cosme i Sant Damià"
+   }
+  ],
+  "Andratx": [
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-06-29",
+    "motivo": ""
+   }
+  ],
+  "Port d'Andratx": [
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-07-16",
+    "motivo": "Mare de Déu del Carme"
+   }
+  ],
+  "s'Arracó": [
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-08-28",
+    "motivo": "Sant Agustí"
+   }
+  ],
+  "Ariany": [
+   {
+    "fecha": "2026-08-31",
+    "motivo": "Segona Festa Patronal"
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": "Pont de la Immaculada"
+   }
+  ],
+  "Artà": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-08-06",
+    "motivo": "Sant Salvador"
+   }
+  ],
+  "Colònia de Sant Pere": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-06-29",
+    "motivo": "Sant Pere"
+   }
+  ],
+  "Banyalbufar": [
+   {
+    "fecha": "2026-09-08",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   }
+  ],
+  "Port des Canonge": [
+   {
+    "fecha": "2026-07-25",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   }
+  ],
+  "Binissalem": [
+   {
+    "fecha": "2026-07-24",
+    "motivo": "Divendres previ a Sant Jaume"
+   },
+   {
+    "fecha": "2026-09-25",
+    "motivo": "Divendres de Sa Vermada"
+   }
+  ],
+  "Búger": [
+   {
+    "fecha": "2026-06-29",
+    "motivo": "Sant Pere"
+   },
+   {
+    "fecha": "2026-06-30",
+    "motivo": "Sant Marçal"
+   }
+  ],
+  "Bunyola": [
+   {
+    "fecha": "2026-09-21",
+    "motivo": "Sant Mateu"
+   },
+   {
+    "fecha": "2026-11-25",
+    "motivo": "Santa Catalina"
+   }
+  ],
+  "Palmanyola": [
+   {
+    "fecha": "2026-01-20",
+    "motivo": "Sant Sebastià"
+   },
+   {
+    "fecha": "2026-09-21",
+    "motivo": "Sant Mateu"
+   }
+  ],
+  "Orient": [
+   {
+    "fecha": "2026-04-23",
+    "motivo": "Sant Jordi"
+   },
+   {
+    "fecha": "2026-09-21",
+    "motivo": "Sant Mateu"
+   }
+  ],
+  "Calvià": [
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   },
+   {
+    "fecha": "2026-07-16",
+    "motivo": "Verge del Carme"
+   }
+  ],
+  "Es Capdellà": [
+   {
+    "fecha": "2026-01-20",
+    "motivo": "Sant Sebastià"
+   },
+   {
+    "fecha": "2026-07-16",
+    "motivo": "Verge del Carme"
+   }
+  ],
+  "Campanet": [
+   {
+    "fecha": "2026-04-07",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-09-29",
+    "motivo": ""
+   }
+  ],
+  "Campos": [
+   {
+    "fecha": "2026-01-09",
+    "motivo": "Sant Julià i Santa Basilissa"
+   },
+   {
+    "fecha": "2026-10-22",
+    "motivo": "Sa Fira"
+   }
+  ],
+  "Capdepera": [
+   {
+    "fecha": "2026-07-16",
+    "motivo": "Mare de Déu del Carme"
+   },
+   {
+    "fecha": "2026-08-24",
+    "motivo": "Sant Bartomeu"
+   }
+  ],
+  "Consell": [
+   {
+    "fecha": "2026-08-24",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   }
+  ],
+  "Costitx": [
+   {
+    "fecha": "2026-01-20",
+    "motivo": "Sant Sebastià"
+   },
+   {
+    "fecha": "2026-09-08",
+    "motivo": "La Mare de Déu"
+   }
+  ],
+  "Deià": [
+   {
+    "fecha": "2026-01-20",
+    "motivo": "Sant Sebastià"
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   }
+  ],
+  "Escorca": [
+   {
+    "fecha": "2026-06-29",
+    "motivo": "Sant Pere"
+   },
+   {
+    "fecha": "2026-08-10",
+    "motivo": "Sant Llorenç"
+   }
+  ],
+  "Esporles": [
+   {
+    "fecha": "2026-06-29",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   }
+  ],
+  "Estellencs": [
+   {
+    "fecha": "2026-02-27",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-08-29",
+    "motivo": ""
+   }
+  ],
+  "Felanitx": [
+   {
+    "fecha": "2026-07-20",
+    "motivo": "Santa Margalida"
+   },
+   {
+    "fecha": "2026-08-28",
+    "motivo": "Sant Agustí"
+   }
+  ],
+  "Portocolom": [
+   {
+    "fecha": "2026-07-16",
+    "motivo": "Mare de Déu del Carme"
+   },
+   {
+    "fecha": "2026-07-25",
+    "motivo": "Sant Jaume"
+   }
+  ],
+  "s'Horta": [
+   {
+    "fecha": "2026-05-15",
+    "motivo": "Sant Isidre"
+   },
+   {
+    "fecha": "2026-05-25",
+    "motivo": "Dilluns de Cinquagesma"
+   }
+  ],
+  "Cas Concos": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-09-10",
+    "motivo": "Sant Nicolau"
+   }
+  ],
+  "Cala Ferrera": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-05-15",
+    "motivo": "Sant Isidre"
+   }
+  ],
+  "Fornalutx": [
+   {
+    "fecha": "2026-02-27",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-09-08",
+    "motivo": ""
+   }
+  ],
+  "Inca": [
+   {
+    "fecha": "2026-07-30",
+    "motivo": "Sant Abdó i Sant Senén"
+   },
+   {
+    "fecha": "2026-11-20",
+    "motivo": "Divendres després de Dijous Bo"
+   }
+  ],
+  "Lloret De Vistalegre": [
+   {
+    "fecha": "2026-08-07",
+    "motivo": "Dia anterior a Sant Domingo"
+   },
+   {
+    "fecha": "2026-12-10",
+    "motivo": "Mare de Déu de Loreto"
+   }
+  ],
+  "Lloseta": [
+   {
+    "fecha": "2026-04-08",
+    "motivo": "Romeria del Cocó"
+   },
+   {
+    "fecha": "2026-09-08",
+    "motivo": ""
+   }
+  ],
+  "Llubí": [
+   {
+    "fecha": "2026-04-07",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-08-01",
+    "motivo": ""
+   }
+  ],
+  "Llucmajor": [
+   {
+    "fecha": "2026-10-19",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-09-29",
+    "motivo": "Sant Miquel"
+   }
+  ],
+  "Manacor": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-07-25",
+    "motivo": "Sant Jaume"
+   }
+  ],
+  "Porto Cristo": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-07-16",
+    "motivo": "Festa del Carme"
+   }
+  ],
+  "Mancor De La Vall": [
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   },
+   {
+    "fecha": "2026-11-19",
+    "motivo": "Dijous Bo"
+   }
+  ],
+  "Maria De La Salut": [
+   {
+    "fecha": "2026-09-07",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-09-08",
+    "motivo": "Mare de Déu de la Salut"
+   }
+  ],
+  "Marratxí": [
+   {
+    "fecha": "2026-06-29",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-06-30",
+    "motivo": "Sant Marçal"
+   }
+  ],
+  "Montuïri": [
+   {
+    "fecha": "2026-04-07",
+    "motivo": "Dia des Puig - 3a festa de Pasqua"
+   },
+   {
+    "fecha": "2026-08-24",
+    "motivo": "Sant Bartomeu"
+   }
+  ],
+  "Muro": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   }
+  ],
+  "Palma": [
+   {
+    "fecha": "2026-01-20",
+    "motivo": "Sant Sebastià"
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   }
+  ],
+  "Petra": [
+   {
+    "fecha": "2026-04-07",
+    "motivo": "Tercera festa de Pasqua"
+   },
+   {
+    "fecha": "2026-07-21",
+    "motivo": "Santa Praxedis"
+   }
+  ],
+  "Pollença": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-06-29",
+    "motivo": "Sant Pere"
+   }
+  ],
+  "Porreres": [
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan"
+   },
+   {
+    "fecha": "2026-08-17",
+    "motivo": "L'endemà de Sant Roc"
+   }
+  ],
+  "Puigpunyent": [
+   {
+    "fecha": "2026-09-08",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-12-31",
+    "motivo": ""
+   }
+  ],
+  "Sa Pobla": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-07-20",
+    "motivo": ""
+   }
+  ],
+  "Sant Joan": [
+   {
+    "fecha": "2026-04-07",
+    "motivo": "Dimarts de Paqua"
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": "Sant Joan Baptista"
+   }
+  ],
+  "Sant Llorenç des Cardassar": [
+   {
+    "fecha": "2026-08-10",
+    "motivo": "Sant Llorenç"
+   },
+   {
+    "fecha": "2026-09-08",
+    "motivo": "Mare de Déu"
+   }
+  ],
+  "Son Carrió": [
+   {
+    "fecha": "2026-05-08",
+    "motivo": "Sant Miquel"
+   },
+   {
+    "fecha": "2026-09-29",
+    "motivo": "Sant Miquelet"
+   }
+  ],
+  "Cala Millor, sa Coma i s'Illot": [
+   {
+    "fecha": "2026-01-19",
+    "motivo": "Després festa Sant Antoni"
+   },
+   {
+    "fecha": "2026-09-11",
+    "motivo": "Abans festa Santa Maria"
+   }
+  ],
+  "Santa Eugènia": [
+   {
+    "fecha": "2026-04-20",
+    "motivo": "Es Firó"
+   },
+   {
+    "fecha": "2026-08-03",
+    "motivo": "Festa Patronal"
+   }
+  ],
+  "Santa Margalida": [
+   {
+    "fecha": "2026-07-20",
+    "motivo": "Santa Margalida"
+   },
+   {
+    "fecha": "2026-09-07",
+    "motivo": "Dilluns de la Beata"
+   }
+  ],
+  "Can Picafort": [
+   {
+    "fecha": "2026-09-07",
+    "motivo": "Dilluns de la Beata"
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   }
+  ],
+  "Son Serra de Marina": [
+   {
+    "fecha": "2026-07-20",
+    "motivo": "Santa Margalida"
+   },
+   {
+    "fecha": "2026-09-07",
+    "motivo": "Dilluns de la Beata"
+   }
+  ],
+  "Santa Maria Del Camí": [
+   {
+    "fecha": "2026-04-27",
+    "motivo": "Es Firó"
+   },
+   {
+    "fecha": "2026-07-20",
+    "motivo": "Santa Margalida"
+   }
+  ],
+  "Santanyí": [
+   {
+    "fecha": "2026-03-03",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-11-30",
+    "motivo": ""
+   }
+  ],
+  "S'Alqueria Blanca": [
+   {
+    "fecha": "2026-03-03",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-03-19",
+    "motivo": ""
+   }
+  ],
+  "Portopetro": [
+   {
+    "fecha": "2026-03-19",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": ""
+   }
+  ],
+  "Calonge": [
+   {
+    "fecha": "2026-03-03",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-09-29",
+    "motivo": ""
+   }
+  ],
+  "Cala d'Or": [
+   {
+    "fecha": "2026-03-03",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": ""
+   }
+  ],
+  "Es Llombards": [
+   {
+    "fecha": "2026-01-16",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-08-07",
+    "motivo": ""
+   }
+  ],
+  "Cala Figuera": [
+   {
+    "fecha": "2026-03-03",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-11-30",
+    "motivo": ""
+   }
+  ],
+  "Selva": [
+   {
+    "fecha": "2026-08-10",
+    "motivo": "Sant Llorenç"
+   },
+   {
+    "fecha": "2026-11-19",
+    "motivo": "Dijous Bo"
+   }
+  ],
+  "Caimari": [
+   {
+    "fecha": "2026-11-19",
+    "motivo": "Dijous Bo"
+   },
+   {
+    "fecha": "2026-11-20",
+    "motivo": ""
+   }
+  ],
+  "Moscari": [
+   {
+    "fecha": "2026-11-19",
+    "motivo": "Dijous Bo"
+   },
+   {
+    "fecha": "2026-11-20",
+    "motivo": ""
+   }
+  ],
+  "Biniamar": [
+   {
+    "fecha": "2026-09-23",
+    "motivo": "Santa Tecla"
+   },
+   {
+    "fecha": "2026-11-19",
+    "motivo": "Dijous Bo"
+   }
+  ],
+  "Sencelles": [
+   {
+    "fecha": "2026-02-05",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-02-27",
+    "motivo": ""
+   }
+  ],
+  "Biniali": [
+   {
+    "fecha": "2026-02-27",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-07-10",
+    "motivo": ""
+   }
+  ],
+  "Ses Salines": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-08-24",
+    "motivo": "Sant Bartomeu"
+   }
+  ],
+  "Colònia de Sant Jordi": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": "Sant Antoni"
+   },
+   {
+    "fecha": "2026-04-23",
+    "motivo": "Sant Jordi"
+   }
+  ],
+  "Sineu": [
+   {
+    "fecha": "2026-04-25",
+    "motivo": "Sant Marc"
+   },
+   {
+    "fecha": "2026-08-14",
+    "motivo": "Assumpció de la Mare de Déu (dia previ)"
+   }
+  ],
+  "Sóller": [
+   {
+    "fecha": "2026-05-11",
+    "motivo": "Es Firó"
+   },
+   {
+    "fecha": "2026-08-24",
+    "motivo": "Sant Bartomeu"
+   }
+  ],
+  "Son Servera": [
+   {
+    "fecha": "2026-01-17",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-06-24",
+    "motivo": ""
+   }
+  ],
+  "Valldemossa": [
+   {
+    "fecha": "2026-07-28",
+    "motivo": "Santa Catalina Thomàs"
+   },
+   {
+    "fecha": "2026-08-24",
+    "motivo": "Sant Bartomeu"
+   }
+  ],
+  "Vilafranca De Bonany": [
+   {
+    "fecha": "2026-12-04",
+    "motivo": ""
+   },
+   {
+    "fecha": "2026-12-07",
+    "motivo": ""
+   }
+  ]
+ }
+}

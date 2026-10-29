@@ -64,7 +64,7 @@
     "num": 7,
     "nombre": "Ruta Faros 4 · Llevant: Capdepera, Porto Cristo y Portocolom",
     "dificultad": "Fácil",
-    "km": 208,
+    "km": 206,
     "horas_conduccion": 4.6,
     "salida": "09:00",
     "gpx": "facil-07-ruta-faros-4-llevant-capdepera-porto-cristo-y-portocolom.gpx"
@@ -104,7 +104,7 @@
     "num": 11,
     "nombre": "Costa Norte: Alcúdia, Son Serra y Colònia de Sant Pere",
     "dificultad": "Fácil",
-    "km": 176,
+    "km": 174,
     "horas_conduccion": 3.9,
     "salida": "09:00",
     "gpx": "facil-11-costa-norte-alcudia-son-serra-y-colonia-de-sant-pere.gpx"
@@ -124,7 +124,7 @@
     "num": 13,
     "nombre": "Interior de Llevant: Vilafranca, Manacor y Son Macià",
     "dificultad": "Fácil",
-    "km": 124,
+    "km": 123,
     "horas_conduccion": 2.7,
     "salida": "09:00",
     "gpx": "facil-13-interior-de-llevant-vilafranca-manacor-y-son-macia.gpx"
@@ -164,7 +164,7 @@
     "num": 4,
     "nombre": "Serra de Llevant: Artà y Cala Ratjada",
     "dificultad": "Media",
-    "km": 180,
+    "km": 182,
     "horas_conduccion": 4.0,
     "salida": "09:00",
     "gpx": "media-04-serra-de-llevant-arta-y-cala-ratjada.gpx"
@@ -184,7 +184,7 @@
     "num": 6,
     "nombre": "Ruta Faros 5 · Bahías del Norte: Formentor, Alcanada y Capdepera",
     "dificultad": "Media",
-    "km": 242,
+    "km": 243,
     "horas_conduccion": 5.4,
     "salida": "08:30",
     "gpx": "media-06-ruta-faros-5-bahias-del-norte-formentor-alcanada-y-capdepera.gpx"
@@ -204,7 +204,7 @@
     "num": 8,
     "nombre": "Ruta Puigs 3 · Llevant: Bonany, Castell de Capdepera, Sant Salvador d'Artà y Betlem",
     "dificultad": "Media",
-    "km": 190,
+    "km": 191,
     "horas_conduccion": 4.2,
     "salida": "09:00",
     "gpx": "media-08-ruta-puigs-3-llevant-bonany-castell-de-capdepera-sant-salvador-d-arta-y-betlem.gpx"
@@ -214,7 +214,7 @@
     "num": 9,
     "nombre": "Ruta de los Castillos: Bellver, Santueri y Capdepera",
     "dificultad": "Media",
-    "km": 231,
+    "km": 228,
     "horas_conduccion": 5.1,
     "salida": "09:00",
     "gpx": "media-09-ruta-de-los-castillos-bellver-santueri-y-capdepera.gpx"
@@ -324,8 +324,8 @@
     "num": 8,
     "nombre": "Media Vuelta Norte: de Andratx a Artà",
     "dificultad": "Difícil",
-    "km": 282,
-    "horas_conduccion": 6.3,
+    "km": 280,
+    "horas_conduccion": 6.2,
     "salida": "08:30",
     "gpx": "dificil-08-media-vuelta-norte-de-andratx-a-arta.gpx"
   },
@@ -335,7 +335,7 @@
     "nombre": "Ruta Faros 3 · Poniente: Sa Mola y Cap Gros",
     "dificultad": "Difícil",
     "km": 151,
-    "horas_conduccion": 3.4,
+    "horas_conduccion": 3.3,
     "salida": "08:30",
     "gpx": "dificil-09-ruta-faros-3-poniente-sa-mola-y-cap-gros.gpx"
   },
@@ -354,7 +354,7 @@
     "num": 11,
     "nombre": "Ruta Puigs 4 · Gran Ruta de los Puigs",
     "dificultad": "Difícil",
-    "km": 236,
+    "km": 235,
     "horas_conduccion": 5.2,
     "salida": "08:30",
     "gpx": "dificil-11-ruta-puigs-4-gran-ruta-de-los-puigs.gpx"
