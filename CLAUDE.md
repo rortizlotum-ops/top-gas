@@ -23,3 +23,24 @@ Cada cambio se deja terminado de principio a fin, sin pedir confirmación:
 - Series con nombre propio: "Vuelta a Mallorca…", "Ruta Faros N", "Ruta Puigs N".
 - Salida habitual a las 8:30 o 9:00 y vuelta a partir de las 15:00.
 - Tiempo de conducción calculado a 45 km/h de media.
+
+## Antes de cada salida: comprobar la ruta
+
+Cuando el propietario diga qué ruta van a hacer y qué día (p. ej. «la 3 roja el domingo 8»):
+
+1. Ejecutar `python3 scripts/comprobar_ruta.py "roja 3" 2026-11-08`. Cruza el track del GPX con:
+   - las incidencias de carreteras del Consell de Mallorca, en directo (servicio público
+     `https://ide.conselldemallorca.net/server/rest/services/public/ws_inccar/MapServer`, el mismo que usa
+     https://cim.conselldemallorca.net/apps/incidencies/);
+   - las festes locals oficiales (`datos/festes_locals_2026.json`, del calendario laboral de la CAIB);
+   - los mercados semanales y las ferias (`datos/mercados_y_ferias.json`, orientativo).
+2. Buscar además en internet las fiestas, ferias, mercadillos medievales, carreras o pruebas deportivas
+   de ese fin de semana en los pueblos por los que pasa la ruta (agenda de mallorca.com, webs de los
+   ayuntamientos, thecalendarmallorca.com), porque suelen cortar la travesía principal del pueblo.
+3. Responder con un resumen claro: cortes (⛔), avisos (⚠️) y qué hacer (salir antes, otra ruta o un
+   desvío). Si hay un corte de verdad en el recorrido, proponer la ruta alternativa más parecida.
+4. Si un corte es largo (semanas o meses), regenerar las rutas: el generador evita automáticamente
+   los cortes activos del Consell.
+
+Mantenimiento de datos: cuando se publique el calendario laboral de 2027 en
+https://www.caib.es/sites/calendarilaboral/, añadir `datos/festes_locals_2027.json` y actualizar las ferias.
