@@ -252,7 +252,7 @@ RUTAS = [
               "Can Picafort y Artà. Regreso por el interior (Manacor, Petra y Sineu).",
          puntos=[SALIDA, P["Puigpunyent"], P["Andratx"], P["Estellencs"], P["Banyalbufar"], P["Valldemossa"],
                  P["Deià"], P["Sóller"], P["Embalse de Cúber"], P["Santuari de Lluc"], P["Pollença"], P["Alcúdia"],
-                 P["Can Picafort"], P["Artà"], P["Manacor"], P["Petra"], P["Sineu"], SALIDA]),
+                 P["Can Picafort"], P["Artà"], P["Petra"], P["Sineu"], SALIDA]),
     dict(nombre="Media Vuelta Sur: del Migjorn a Llevant", dificultad="Fácil", hora="09:00",
          desc="La mitad sur de la vuelta a la isla por carreteras cómodas: s'Arenal, Cap Blanc, Colònia de Sant Jordi, Santanyí, Cala d'Or, Portocolom, Porto Cristo y Artà. Vuelta por Santa Margalida y Sineu.",
          puntos=[SALIDA, P["Son Ferriol"], P["Sant Jordi"], P["S'Arenal"], P["Faro de Cap Blanc"], P["Colònia de Sant Jordi"], P["Santanyí"], P["Cala d'Or"], P["Portocolom"], P["Porto Cristo"], P["Son Servera"], P["Artà"], P["Santa Margalida"], P["Sineu"], SALIDA]),
@@ -331,8 +331,8 @@ RUTAS = [
          puntos=[SALIDA, P["Alaró"], P["Lloseta"], P["Mancor de la Vall"], P["Selva"], P["Caimari"], P["Campanet"],
                  P["Búger"], P["Sa Pobla"], P["Muro"], P["Llubí"], P["Sencelles"], SALIDA]),
     dict(nombre="Costa Norte: Alcúdia, Son Serra y Colònia de Sant Pere", dificultad="Fácil", hora="09:00",
-         desc='La bahía de Alcúdia de punta a punta: Alcúdia, Can Picafort, Son Serra de Marina y Colònia de Sant Pere, con final en Artà. Vuelta por el interior (Manacor, Petra y Sineu).',
-         puntos=[SALIDA, P["Santa Maria del Camí"], P["Binissalem"], P["Inca"], P["Sa Pobla"], P["Alcúdia"], P["Can Picafort"], P["Son Serra de Marina"], P["Colònia de Sant Pere"], P["Artà"], P["Manacor"], P["Petra"], P["Sineu"], SALIDA]),
+         desc='La bahía de Alcúdia de punta a punta: Alcúdia, Can Picafort, Son Serra de Marina y Colònia de Sant Pere, con final en Artà. Vuelta por el interior (Petra y Sineu).',
+         puntos=[SALIDA, P["Santa Maria del Camí"], P["Binissalem"], P["Inca"], P["Sa Pobla"], P["Alcúdia"], P["Can Picafort"], P["Son Serra de Marina"], P["Colònia de Sant Pere"], P["Artà"], P["Petra"], P["Sineu"], SALIDA]),
     dict(nombre="Gran Ruta de Llevant: Cales de Mallorca, Canyamel y Cala Ratjada", dificultad="Fácil", hora="09:00",
          desc='Toda la costa de Llevant: Cales de Mallorca, Porto Cristo, Cala Millor, Canyamel y Cala Ratjada. Ida por Algaida y Manacor, vuelta por Artà, Santa Margalida e Inca.',
          puntos=[SALIDA, P["Algaida"], P["Montuïri"], P["Manacor"], P["Cales de Mallorca"], P["Porto Cristo"], P["Cala Millor"], P["Canyamel"], P["Cala Ratjada"], P["Artà"], P["Santa Margalida"], P["Llubí"], P["Inca"], P["Binissalem"], P["Santa Maria del Camí"], SALIDA]),
@@ -422,88 +422,6 @@ def es_parada(nombre):
     return nombre.startswith(_PREFIJOS_PARADA) and nombre != "Cala Millor"
 
 
-# Carreteras cortadas ahora mismo según el Consell de Mallorca (servicio de incidencias). Se evitan al
-# calcular. No se cuentan los cortes solo nocturnos ni los de días laborables (las rutas son en fin de semana).
-_CORTES = None
-
-
-def cortes_activos():
-    """Lista de tramos cortados [(carretera, descripción, [[lon, lat], ...]), ...]."""
-    global _CORTES
-    if _CORTES is None:
-        from datetime import date
-        from comprobar_ruta import es_solo_de_noche, incidencias_del_dia
-        _CORTES = []
-        try:
-            incidencias = incidencias_del_dia(date.today())
-        except Exception as e:  # noqa: BLE001
-            print("  AVISO: no se han podido leer las incidencias del Consell:", e)
-            incidencias = []
-        for a, geo, tramos in incidencias:
-            obs = (a.get("observacions") or "").lower()
-            if a.get("gravetat") != "TANCADA" or es_solo_de_noche(obs) or "laborable" in obs:
-                continue
-            caminos = tramos or [[[geo["x"], geo["y"]]]]
-            desc = " → ".join(x for x in (a.get("desinici"), a.get("desfin")) if x)
-            for camino in caminos:
-                _CORTES.append((a.get("carretera"), desc, camino))
-        for carretera, desc, _ in _CORTES:
-            print(f"  Corte activo que se evita: {carretera} {desc}")
-    return _CORTES
-
-
-def _poligonos_cortes(lado_m=40, cada_m=500):
-    """Pequeños cuadrados sobre cada tramo cortado (uno cada `cada_m`), para exclude_polygons de Valhalla.
-
-    Valhalla limita el perímetro total de las zonas excluidas a 10 km: con cuadrados pequeños basta
-    para que no pase por el tramo."""
-    kx, ky = 111320 * math.cos(math.radians(39.6)), 110570
-    centros = []
-    for _, _, camino in cortes_activos():
-        xy = [(lon * kx, lat * ky) for lon, lat in camino]
-        centros.append(xy[len(xy) // 2])
-        recorrido = 0.0
-        for a, b in zip(xy, xy[1:]):
-            recorrido += math.dist(a, b)
-            if recorrido >= cada_m:
-                centros.append(b)
-                recorrido = 0.0
-    maximo = int(9000 // (4 * lado_m))
-    if len(centros) > maximo:
-        centros = centros[::math.ceil(len(centros) / maximo)]
-    h = lado_m / 2
-    return [[[round((x + dx) / kx, 6), round((y + dy) / ky, 6)] for dx, dy in ((-h, -h), (h, -h), (h, h), (-h, h), (-h, -h))]
-            for x, y in centros]
-
-
-def cruza_corte(coords, margen_m=30, minimo_m=200):
-    """True si el recorrido pasa por algún tramo cortado."""
-    kx, ky = 111320 * math.cos(math.radians(39.6)), 110570
-
-    def dist_segmento(p, a, b):
-        dx, dy = b[0] - a[0], b[1] - a[1]
-        u = 0.0 if dx == dy == 0 else max(0.0, min(1.0, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / (dx * dx + dy * dy)))
-        return math.dist(p, (a[0] + u * dx, a[1] + u * dy))
-
-    for _, _, camino in cortes_activos():
-        xy = [(lon * kx, lat * ky) for lon, lat in camino]
-        segmentos = list(zip(xy, xy[1:])) or [(xy[0], xy[0])]
-        x0, x1 = min(x for x, _ in xy) - margen_m, max(x for x, _ in xy) + margen_m
-        y0, y1 = min(y for _, y in xy) - margen_m, max(y for _, y in xy) + margen_m
-        dentro, recorrido, previo = False, 0.0, None
-        for lon, lat in coords:
-            p = (lon * kx, lat * ky)
-            cerca = x0 <= p[0] <= x1 and y0 <= p[1] <= y1 and any(dist_segmento(p, a, b) < margen_m for a, b in segmentos)
-            if cerca and dentro:
-                recorrido += math.dist(previo, p)
-                if recorrido > minimo_m:  # va por el tramo cortado, no solo lo cruza o pasa por su inicio
-                    return True
-            elif cerca:
-                recorrido = 0.0
-            dentro, previo = cerca, p
-    return False
-
-
 OSRM = "https://router.project-osrm.org/route/v1/driving/"
 AUTOVIAS = {"Ma-1", "Ma-13", "Ma-19", "Ma-20", "Ma-30"}
 
@@ -523,16 +441,13 @@ def _osrm_tramo(a, b):
 
 
 def _calcular_trozo(puntos):
-    peticion = {
+    body = json.dumps({
         "locations": [{"lat": lat, "lon": lon, "type": "break"} for _, lat, lon in puntos],
         "costing": "motorcycle",
         # use_highways=0: evitar autovías y autopistas; use_trails=0: nada de pistas sin asfaltar
         "costing_options": {"motorcycle": {"use_highways": 0, "use_trails": 0, "use_ferry": 0}},
         "units": "kilometers",
-    }
-    if _poligonos_cortes():
-        peticion["exclude_polygons"] = _poligonos_cortes()
-    body = json.dumps(peticion).encode()
+    }).encode()
     for intento in range(4):
         try:
             req = urllib.request.Request(VALHALLA, data=body, headers={
@@ -551,7 +466,7 @@ def _calcular_trozo(puntos):
                 recta = math.dist((a[1] * 110.57, a[2] * 85.2), (b[1] * 110.57, b[2] * 85.2)) * 1000
                 if largo > 2 * recta + 2000:
                     alt = _osrm_tramo(a, b)
-                    if alt and alt[1] * 1.4 + 2000 < largo and not (alt[3] & AUTOVIAS) and not cruza_corte(alt[0]):
+                    if alt and alt[1] * 1.4 + 2000 < largo and not (alt[3] & AUTOVIAS):
                         print(f"    tramo {a[0]} -> {b[0]}: Valhalla {largo / 1000:.1f} km, se usa OSRM {alt[1] / 1000:.1f} km")
                         shape, largo, tiempo, tramo_autovia = alt[0], alt[1], alt[2], []
                 coords.extend(shape if not coords else shape[1:])
@@ -707,8 +622,6 @@ def main():
         coords, dist, _, autovia = calcular_ruta(ruta["puntos"])
         if autovia:
             print("  AVISO, tramos en autovía:", autovia)
-        if cruza_corte(coords):
-            print("  AVISO, la ruta pasa por una carretera cortada según el Consell")
         for km, largo, lugar in tramos_repetidos(coords, ruta["puntos"]):
             print(f"  AVISO, tramo repetido: {largo} m en el km {km} (cerca de {lugar})")
         fichero = f"{ruta['id']}-{slug(ruta['nombre'])}.gpx"

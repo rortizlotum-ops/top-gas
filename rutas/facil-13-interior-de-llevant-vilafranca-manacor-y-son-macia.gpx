@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="top-gas" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>Fácil 13 · Interior de Llevant: Vilafranca, Manacor y Son Macià</name><desc>Carreteras secundarias del Llevant interior: Sant Joan, Vilafranca, Manacor, Son Macià y Felanitx. Vuelta por Llucmajor y Sant Jordi. Dificultad: Fácil. Distancia aprox.: 123 km.</desc><keywords>moto, mallorca, fácil</keywords></metadata>
+  <metadata><name>Fácil 13 · Interior de Llevant: Vilafranca, Manacor y Son Macià</name><desc>Carreteras secundarias del Llevant interior: Sant Joan, Vilafranca, Manacor, Son Macià y Felanitx. Vuelta por Llucmajor y Sant Jordi. Dificultad: Fácil. Distancia aprox.: 124 km.</desc><keywords>moto, mallorca, fácil</keywords></metadata>
   <wpt lat="39.625900" lon="2.723800"><name>Gasolinera BP · Polígono de Marratxí</name></wpt>
-  <trk><name>Fácil 13 · Interior de Llevant: Vilafranca, Manacor y Son Macià</name><desc>Carreteras secundarias del Llevant interior: Sant Joan, Vilafranca, Manacor, Son Macià y Felanitx. Vuelta por Llucmajor y Sant Jordi. Dificultad: Fácil. Distancia aprox.: 123 km.</desc><type>Moto</type><trkseg>
+  <trk><name>Fácil 13 · Interior de Llevant: Vilafranca, Manacor y Son Macià</name><desc>Carreteras secundarias del Llevant interior: Sant Joan, Vilafranca, Manacor, Son Macià y Felanitx. Vuelta por Llucmajor y Sant Jordi. Dificultad: Fácil. Distancia aprox.: 124 km.</desc><type>Moto</type><trkseg>
     <trkpt lat="39.626023" lon="2.723653"/>
     <trkpt lat="39.626093" lon="2.723751"/>
     <trkpt lat="39.626299" lon="2.723618"/>
@@ -1300,12 +1300,17 @@
     <trkpt lat="39.515389" lon="3.214949"/>
     <trkpt lat="39.515247" lon="3.215008"/>
     <trkpt lat="39.514487" lon="3.215209"/>
-    <trkpt lat="39.514488" lon="3.215248"/>
-    <trkpt lat="39.514253" lon="3.215640"/>
+    <trkpt lat="39.514378" lon="3.215241"/>
+    <trkpt lat="39.514292" lon="3.215263"/>
+    <trkpt lat="39.514233" lon="3.215301"/>
+    <trkpt lat="39.514106" lon="3.215510"/>
+    <trkpt lat="39.513890" lon="3.215875"/>
+    <trkpt lat="39.513623" lon="3.216323"/>
     <trkpt lat="39.513789" lon="3.216479"/>
     <trkpt lat="39.513672" lon="3.216673"/>
     <trkpt lat="39.513789" lon="3.216479"/>
-    <trkpt lat="39.514253" lon="3.215640"/>
+    <trkpt lat="39.513623" lon="3.216323"/>
+    <trkpt lat="39.513890" lon="3.215875"/>
     <trkpt lat="39.514106" lon="3.215510"/>
     <trkpt lat="39.513755" lon="3.215153"/>
     <trkpt lat="39.513407" lon="3.214821"/>
@@ -2178,32 +2183,32 @@
     <trkpt lat="39.567589" lon="2.756672"/>
     <trkpt lat="39.567593" lon="2.756639"/>
     <trkpt lat="39.567637" lon="2.756287"/>
-    <trkpt lat="39.567720" lon="2.755801"/>
-    <trkpt lat="39.567804" lon="2.755411"/>
-    <trkpt lat="39.567971" lon="2.754894"/>
-    <trkpt lat="39.568041" lon="2.754705"/>
-    <trkpt lat="39.568107" lon="2.754452"/>
-    <trkpt lat="39.568180" lon="2.754183"/>
-    <trkpt lat="39.568247" lon="2.753884"/>
-    <trkpt lat="39.568442" lon="2.752757"/>
-    <trkpt lat="39.568460" lon="2.752598"/>
-    <trkpt lat="39.568466" lon="2.752443"/>
-    <trkpt lat="39.568461" lon="2.752241"/>
-    <trkpt lat="39.568437" lon="2.751802"/>
-    <trkpt lat="39.568413" lon="2.751652"/>
-    <trkpt lat="39.568366" lon="2.751514"/>
-    <trkpt lat="39.568274" lon="2.751315"/>
-    <trkpt lat="39.568303" lon="2.751217"/>
-    <trkpt lat="39.568343" lon="2.751152"/>
-    <trkpt lat="39.568373" lon="2.751124"/>
-    <trkpt lat="39.568389" lon="2.751126"/>
-    <trkpt lat="39.568434" lon="2.751115"/>
-    <trkpt lat="39.568474" lon="2.751083"/>
-    <trkpt lat="39.568518" lon="2.751063"/>
-    <trkpt lat="39.568582" lon="2.751057"/>
-    <trkpt lat="39.568729" lon="2.751075"/>
-    <trkpt lat="39.569037" lon="2.751169"/>
-    <trkpt lat="39.569304" lon="2.751255"/>
+    <trkpt lat="39.567693" lon="2.756303"/>
+    <trkpt lat="39.567918" lon="2.756365"/>
+    <trkpt lat="39.568033" lon="2.756397"/>
+    <trkpt lat="39.568511" lon="2.756545"/>
+    <trkpt lat="39.568816" lon="2.756645"/>
+    <trkpt lat="39.569173" lon="2.756738"/>
+    <trkpt lat="39.569214" lon="2.756751"/>
+    <trkpt lat="39.569217" lon="2.756676"/>
+    <trkpt lat="39.569208" lon="2.756611"/>
+    <trkpt lat="39.569183" lon="2.756544"/>
+    <trkpt lat="39.569137" lon="2.756476"/>
+    <trkpt lat="39.569080" lon="2.756423"/>
+    <trkpt lat="39.568997" lon="2.756342"/>
+    <trkpt lat="39.568959" lon="2.756268"/>
+    <trkpt lat="39.568939" lon="2.756162"/>
+    <trkpt lat="39.568946" lon="2.756027"/>
+    <trkpt lat="39.568976" lon="2.755674"/>
+    <trkpt lat="39.568982" lon="2.755596"/>
+    <trkpt lat="39.569000" lon="2.755126"/>
+    <trkpt lat="39.568993" lon="2.754573"/>
+    <trkpt lat="39.568978" lon="2.754091"/>
+    <trkpt lat="39.568957" lon="2.753401"/>
+    <trkpt lat="39.568967" lon="2.753175"/>
+    <trkpt lat="39.568994" lon="2.753018"/>
+    <trkpt lat="39.569083" lon="2.752666"/>
+    <trkpt lat="39.569190" lon="2.752189"/>
     <trkpt lat="39.569342" lon="2.751267"/>
     <trkpt lat="39.569516" lon="2.750233"/>
     <trkpt lat="39.569591" lon="2.749570"/>
